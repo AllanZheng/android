@@ -1,1 +1,0 @@
-Documents dropped off here will be checked against QA standards and allocated to the correct directory.
