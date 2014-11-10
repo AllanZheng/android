@@ -2,10 +2,10 @@
 -- version 4.2.10
 -- http://www.phpmyadmin.net
 --
--- Host: localhost
--- Generation Time: Oct 26, 2014 at 09:06 AM
--- Server version: 5.5.24-log
--- PHP Version: 5.3.13
+-- Host: 127.0.0.1
+-- Generation Time: Nov 10, 2014 at 05:27 PM
+-- Server version: 5.6.17
+-- PHP Version: 5.5.12
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET time_zone = "+00:00";
@@ -41,7 +41,7 @@ CREATE TABLE IF NOT EXISTS `recordings` (
 
 CREATE TABLE IF NOT EXISTS `reserves` (
 `id` int(11) NOT NULL,
-  `name` varchar(255) NOT NULL,
+  `name` varchar(50) NOT NULL,
   `location` varchar(20) NOT NULL,
   `description` text NOT NULL,
   `created` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP
@@ -55,8 +55,8 @@ CREATE TABLE IF NOT EXISTS `reserves` (
 
 CREATE TABLE IF NOT EXISTS `species` (
 `id` int(11) NOT NULL,
-  `common_name` varchar(255) NOT NULL,
-  `latin_name` varchar(255) NOT NULL,
+  `common_name` varchar(50) NOT NULL,
+  `latin_name` varchar(100) NOT NULL,
   `created` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
@@ -70,8 +70,8 @@ CREATE TABLE IF NOT EXISTS `species_occurrence` (
 `id` int(11) NOT NULL,
   `species_id` int(11) NOT NULL,
   `recording_id` int(11) NOT NULL,
-  `longitude` varchar(255) NOT NULL,
-  `latitude` varchar(255) NOT NULL,
+  `longitude` varchar(20) NOT NULL,
+  `latitude` varchar(20) NOT NULL,
   `abundance` enum('D','A','F','O','R') NOT NULL,
   `comment` text NOT NULL,
   `general_photo` varchar(255) NOT NULL,
@@ -87,10 +87,10 @@ CREATE TABLE IF NOT EXISTS `species_occurrence` (
 
 CREATE TABLE IF NOT EXISTS `users` (
 `id` int(11) NOT NULL,
-  `email` varchar(255) NOT NULL,
+  `email` varchar(254) NOT NULL,
   `password` varchar(255) NOT NULL,
-  `name` varchar(255) NOT NULL,
-  `phone` varchar(255) NOT NULL,
+  `name` varchar(50) NOT NULL,
+  `phone` varchar(25) NOT NULL,
   `created` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
