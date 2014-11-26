@@ -1,16 +1,70 @@
 ToDo: 
 
--Complete class diagram (Friday 28th)
+
+DIAGRAMS
+-Object Diagrams						: elo9
+	>top level class diagrams + Links
 
 
--Sequence Diagrams
--State Diagrams
--Activity Diagrams
--Component Diagrams
+
+-Class Diagram
+	>Link classes together					: all		(DONE)
+	>Complete Database					: jas78
+	>Add Reserve class					: elo9
+	>Complete Activity_AddSpecies (consider renaming)	: elo9
+	>Filtering Package					: elo9
+		>Filter interface
+		>Filter classes
+	>Reorder Data package					: elo9
+	>Add Abundance						: elo9
 
 
+
+-State Diagrams							: jas78
+	>Login / Register
+	>Adding Record
+	>Updating a Record
+
+
+-Sequence Diagrams						: als48
+	>GeneralSystemFlow
+		>Login / Register
+		>Adding Record
+		>Updating a Record
+		>Generic Filtering
+
+-Activity Diagrams						: jas78
+	>Whole System activity
+
+
+
+
+
+
+ALGORITHMS
+//Establish psuedo code standard				: jas78
+//Establish roles / deligation after diagrams
 -Algorithms : psuedo code
+	>Filter			
+		>Alphabetical
+		>Author
+		>Date
+		>Location
+		>Species
+	>Search
+		>Generic Search
 
 
 
--Create Android Project
+
+DATA STRUCTURES
+-RecordingQueue
+	>ADT : Psuedo code
+
+
+
+
+
+PROTOTYPE
+-Android Project
+	>Add Activites						: jas78
