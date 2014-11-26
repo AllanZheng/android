@@ -1,0 +1,16 @@
+ToDo: 
+
+-Complete class diagram (Friday 28th)
+
+
+-Sequence Diagrams
+-State Diagrams
+-Activity Diagrams
+-Component Diagrams
+
+
+-Algorithms : psuedo code
+
+
+
+-Create Android Project
