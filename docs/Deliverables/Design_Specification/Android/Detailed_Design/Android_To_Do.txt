@@ -10,13 +10,13 @@ DIAGRAMS
 -Class Diagram
 	>Link classes together					: all		(DONE)
 	>Complete Database					: jas78
-	>Add Reserve class					: elo9
-	>Complete Activity_AddSpecies (consider renaming)	: elo9
-	>Filtering Package					: elo9
+	>Add Reserve class					: elo9		(DONE)
+	>Complete Activity_AddSpecies (consider renaming)	: elo9		(DONE)
+	>Filtering Package					: elo9		(DONE)
 		>Filter interface
 		>Filter classes
-	>Reorder Data package					: elo9
-	>Add Abundance						: elo9
+	>Reorder Data package					: elo9		(DONE)
+	>Add Abundance enum					: elo9		(DONE)
 
 
 
