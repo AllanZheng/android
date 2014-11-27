@@ -2,7 +2,7 @@ ToDo:
 
 
 DIAGRAMS
--Object Diagrams						: elo9
+-Object Diagrams						: elo9		(DONE)
 	>top level class diagrams + Links
 
 
