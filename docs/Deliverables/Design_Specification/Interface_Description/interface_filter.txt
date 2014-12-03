@@ -1,0 +1,68 @@
+package uk.ac.aber.cs221.group11.filter;
+
+/** 
+ * Outline for Filter. 
+ */
+
+public class AlphabeticFilter {
+	
+	private Object[] data; //Holds the data to be filtered
+	
+	/**
+	 * Returns the data held by the filter
+	 *
+	 * @return Object[] filtered data
+	 */
+	public Object[] getData();
+	
+	/**
+	 * Filters the data given to it alphabetically
+	 *
+	 * @param dataToFilter The provided data which is to be filtered
+	 * @return Object[] The now filtered data
+	 */
+	public Object[] filterData(Object[] dataToFilter);
+	
+}
+
+public class DateFilter {
+
+	private Object[] data; //Holds the data to be filtered
+	
+	/**
+	 * Returns the data held by the filter
+	 *
+	 * @return Object[] filtered data
+	 */
+	public Object[] getData();
+	
+	/**
+	 * Filters the data given to it by date
+	 *
+	 * @param dataToFilter The provided data which is to be filtered
+	 * @return Object[] The now filtered data
+	 */
+	public Object[] filterData(Object[] dataToFilter);
+	
+}
+
+public class SpeciesFilter {
+
+	private Object[] data; //Holds the data to be filtered
+	
+	/**
+	 * Returns the data held by the filter
+	 *
+	 * @return Object[] filtered data
+	 */
+	public Object[] getData();
+	
+	/**
+	 * Filters the data given to it by species
+	 *
+	 * @param dataToFilter The provided data which is to be filtered
+	 * @return Object[] The now filtered data
+	 */
+	public Object[] filterData(Object[] dataToFilter);
+
+}

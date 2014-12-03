@@ -3,9 +3,9 @@ import uk.ac.aber.cs211.group11.settings;
 import uk.ac.aber.cs211.group11.ui;
 
 /**
-  * Outline for Datastore class this class holds the details of a session
-  * i.e. It's user, settings, queue
-*/
+ * Outline for Datastore class this class holds the details of a session
+ * i.e. It's user, settings, queue
+ */
 public class DataStore {
 
   private Author currentUser; //The person currently using the app, used to identify them.
@@ -13,43 +13,52 @@ public class DataStore {
   private Settings currentSettings; //Holds the users settings, allows manipulation of these. And remembers them.
 
   /**
-    * Returns the current user.
-  */
+   * Returns the current user.
+   *
+   * @return Author the current user
+   */
   public Author getCurrentUser();
 
   /**
-    * Returns the queue of recordings to be uploaded.
-  */
+   * Returns the queue of recordings to be uploaded.
+   *
+   * @return RecordingQueue the queue of recordings to be uploaded
+   */
   public RecordingQueue getAllRecordings();
 
   /**
-    * Returns the store of users settings.
-  */
+   * Returns the store of users settings.
+   *
+   * @return Settings the store of the users settings
+   */
   public Settings getCurrentSettings();
 
   /**
-    * Overrides the current user with new one.
-    * @param a the new author to replace the existing one.
-  */
+   * Overrides the current user with new one.
+   *
+   * @param a the new author to replace the existing one.
+   */
   public void setCurrentUser(Author a);
 
   /**
-    * Overrides the current queue of recordings and replaces it with another.
-    * @param rq the queue which will replace the existing one.
-  /*
+   * Overrides the current queue of recordings and replaces it with another.
+   *
+   * @param rq the queue which will replace the existing one.
+   */
   public void setAllRecordings(RecordingQueue rq);
 
   /**
-    * Overrides the current settings with new ones.
-    * @param s the new settings to replace the existing ones.
+  * Overrides the current settings with new ones.
+  *
+  * @param s the new settings to replace the existing ones.
   */
   public void setCurrentSettings(Settings s);
 }
 
 /**
-  * Outline for a class representing a single recording, not to be confused
-  * with the record itself. This contains the records status and author.
-*/
+ * Outline for a class representing a single recording, not to be confused
+ * with the record itself. This contains the records status and author.
+ */
 public class Recording {
 
   private Author author; //Represents the person responsible for the recording.
@@ -57,50 +66,60 @@ public class Recording {
   private Status status; //A value determining whether the recording has been uploaded or is in a queue to be uploaded.
 
   /**
-    * The constructor method.
-    * @param a The author responsible for the recording.
-    * @param r The record associated with this recording.
-    * @param s The status of the recording (in the queue or not).
-  */
+   * The constructor method.
+   *
+   * @param a The author responsible for the recording.
+   * @param r The record associated with this recording.
+   * @param s The status of the recording (in the queue or not).
+   */
   public Recording(Author a, Record r, Status s);
 
   /**
-    * Returns the author of this recording.
-  */
+   * Returns the author of this recording.
+   *
+   * @return Author the author of the recording
+   */
   public Author getAuthor();
 
   /**
-    * Returns the record associated with this recording.
-  */
+   * Returns the record associated with this recording.
+   *
+   * @return Record the record associated with this recording
+   */
   public Record getRecord();
 
   /**
-    * Returns the status of the recording.
-  */
+   * Returns the status of the recording.
+   *
+   * @return Status the status of this recording
+   */
   public Status getStatus();
 
   /**
-    * Overrides the current author with new one.
-    * @param a the new author to replace the existing one.
-  */
+   * Overrides the current author with new one.
+   *
+   * @param a the new author to replace the existing one.
+   */
   public void setAuthor(Author a);
 
   /**
-    * Overrides the current record associated with this recording.
-    * @param r the record which will replace the existing one.
-  /*
+   * Overrides the current record associated with this recording.
+   *
+   * @param r the record which will replace the existing one.
+   */
   public void setRecord(Record r);
 
   /**
-    * Overrides the current status with a new one.
-    * @param s the new status to replace the existing one.
-  */
+   * Overrides the current status with a new one.
+   *
+   * @param s the new status to replace the existing one.
+   */
   public void setStatus(Status s);
 }
 
 /**
-  * Outline for a class representing the data contained in a record.
-/*
+ * Outline for a class representing the data contained in a record.
+ */
 public class Record{
 
   private String species; //The name of the species of the specimen.
@@ -113,109 +132,139 @@ public class Record{
   private Image imageScene; //An image of where the specimen was found.
 
   /**
-    * The constructor method.
-    * @param species The name of the species of the specimen.
-    * @param abundance A character defining the species abundance (D,A,F,O,R).
-    * @param long Position of specimen east/west in degrees.
-    * @param lat Position of specimen north/south in degrees.
-    * @param iSpecies An image of the species.
-    * @param iScene An image of where the species was found.
-  */
+   * The constructor method.
+   *
+   * @param species The name of the species of the specimen.
+   * @param abundance A character defining the species abundance (D,A,F,O,R).
+   * @param long Position of specimen east/west in degrees.
+   * @param lat Position of specimen north/south in degrees.
+   * @param iSpecies An image of the species.
+   * @param iScene An image of where the species was found.
+   */
   public Record(String species, char abundance, int long, int lat, Image iSpecies, Image iScene);
 
   /**
-    * Returns the name of the species.
-  */
+   * Returns the name of the species.
+   *
+   * @return String species name of the specimen
+   */
   public String getSpecies();
 
   /**
-    * Returns the abundance of the specimen.
-  */
+   * Returns the abundance of the specimen.
+   * D - "Dominant"
+   * A - "Abundant"
+   * F - "Frequent"
+   * O - "Occasional"
+   * R - "Rare"
+   *
+   * @return Char the abundance of the species
+   */
   public char getAbundance();
 
   /**
-    * Returns the longitudinal position of the specimen.
-  */
+   * Returns the longitudinal position of the specimen.
+   *
+   * @return int the longitudinal position of the specimen
+   */
   public int getLongitude();
 
   /**
-    * Returns the latitudinal position of the specimen.
-  */
+   * Returns the latitudinal position of the specimen.
+   *
+   * @return int the latitudinal position of the specimen
+   */
   public int getLatitude();
 
   /**
-    * Returns the reserve where the speciment was found.
-  */
+   * Returns the reserve where the specimen was found.
+   *
+   * @return String the reserve where the specimen was found
+   */
   public String getReserve();
 
   /**
-    * Returns the comment associated with the record.
-  */
+   * Returns the comment associated with the record.
+   *
+   * @return String a comment about the record
+   */
   public String getComment();
 
   /**
-    * Returns the image of the species.
-  */
+   * Returns the image of the species.
+   *
+   * @return Image an image of the species
+   */
   public Image getImageSpecies();
 
   /**
-    * Returns the image of the scene.
-  */
+   * Returns the image of the scene.
+   *
+   * @return Image an image of the scene
+   */
   public Image getImageScene();
 
   /**
-    * Overrides the current species with a new one.
-    * @param s The new species to replace the existing one.
-  */
+   * Overrides the current species with a new one.
+   *
+   * @param s The new species to replace the existing one.
+   */
   public void setSpecies(String s);
 
   /**
-    * Overrides the current abundance with a new one.
-    * @param a The new abundance to replace the existing one.
-  */
+   * Overrides the current abundance with a new one.
+   *
+   * @param a The new abundance to replace the existing one.
+   */
   public void setAbundance(char a);
 
   /**
-    * Overrides the current longitude with a new one.
-    * @param long The new longitude to replace the existing one.
-  */
+   * Overrides the current longitude with a new one.
+   *
+   * @param long The new longitude to replace the existing one.
+   */
   public void setLongitude(int long);
 
   /**
-    * Overrides the current latitude with a new one.
-    * @param lat The new latitude to replace the existing one.
-  */
+   * Overrides the current latitude with a new one.
+   *
+   * @param lat The new latitude to replace the existing one.
+   */
   public void setLatitude(int lat);
 
   /**
-    * Overrides the current reserve with a new one.
-    * @param r The new reserve to replace the existing one.
-  */
+   * Overrides the current reserve with a new one.
+   *
+   * @param r The new reserve to replace the existing one.
+   */
   public void setReserve(Reserve r);
 
   /**
-    * Overrides the current comment with a new one.
-    * @param c The new comment to replace the existing one.
-  */
+   * Overrides the current comment with a new one.
+   *
+   * @param c The new comment to replace the existing one.
+   */
   public void setComment(String c);
 
   /**
-    * Overrides the current species image with a new one.
-    * @param iSpecies The new species image to replace the existing one.
-  */
+   * Overrides the current species image with a new one.
+   *
+   * @param iSpecies The new species image to replace the existing one.
+   */
   public void setImageSpecies(Image iSpecies);
 
   /**
-    * Overrides the current scene image with a new one.
-    * @param iScene The new scene image to replace the existing one.
-  */
+   * Overrides the current scene image with a new one.
+   *
+   * @param iScene The new scene image to replace the existing one.
+   */
   public void setImageScene(Image iScene);
 
 }
 
 /**
-  * Outline for a class representing an Author of a recording.
-*/
+ * Outline for a class representing an Author of a recording.
+ */
 public class Author{
 
   private String name; //The name of the author
@@ -224,55 +273,68 @@ public class Author{
   private String uid; //The authors user ID
 
   /**
-    * The constructor method.
-    * @param name The authors name
-    * @param phone The authors telephone number
-    * @param email The authors email address
-  */
+   * The constructor method.
+   *
+   * @param name The authors name
+   * @param phone The authors telephone number
+   * @param email The authors email address
+   */
   public Author(String name, int phone, String email);
 
   /**
-    * Returns the name of the author.
-  */
+   * Returns the name of the author.
+   *
+   * @return String name of the author
+   */
   public String getName();
 
   /**
-    * Returns the phone number of the author.
-  */
+   * Returns the phone number of the author.
+   *
+   * @return int the authors phone number
+   */
   public int getPhone();
 
   /**
-    * Returns the email address of the author.
-  */
+   * Returns the email address of the author.
+   *
+   * @return String the authors email address
+   */
   public String getEmail();
 
   /**
-    * Returns the user ID of the author.
-  */
+   * Returns the user ID of the author.
+   *
+   * @return String the authors User ID
+   */
   public String getUid();
 
   /**
-    * Overrides the current authors name with a new one.
-    * @param n The new name to replace the existing one.
-  */
+   * Overrides the current authors name with a new one.
+   *
+   * @param n The new name to replace the existing one.
+   */
   public void setName(String n);
 
   /**
-    * Overrides the current authors phone number with a new one.
-    * @param p The new number to replace the existing one.
-  */
+   * Overrides the current authors phone number with a new one.
+   *
+   * @param p The new number to replace the existing one.
+   */
   public void  setPhone(int p);
 
   /**
-    * Overrides the current authors email address with a new one.
-    * @param e The new email address to replace the existing one.
-  */
+   * Overrides the current authors email address with a new one.
+   *
+   * @param e The new email address to replace the existing one.
+   */
   public void setEmail(String e);
 
   /**
-    * Overrides the current authors UID with a new one.
-    * @param u The new user ID to replace the existing one.
-  */
+   * Overrides the current authors UID with a new one.
+   *
+   * @param u The new user ID to replace the existing one.
+   */
   public void setUid(String u);
 
 }
