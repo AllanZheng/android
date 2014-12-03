@@ -21,17 +21,13 @@ DIAGRAMS
 
 
 -State Diagrams							: jas78
-	>Login / Register
-	>Adding Record
-	>Updating a Record
-
+	
 
 -Sequence Diagrams						: als48
 	>GeneralSystemFlow
 		>Login / Register
 		>Adding Record
 		>Updating a Record
-		>Generic Filtering
 
 -Activity Diagrams						: jas78
 	>Whole System activity
@@ -39,21 +35,25 @@ DIAGRAMS
 
 
 
-
+!!!!!!!! Done ^^^^^!!!!!
 
 ALGORITHMS
 //Establish psuedo code standard				: jas78
 //Establish roles / deligation after diagrams
--Algorithms : psuedo code
-	>Filter			
+-Algorithms : psuedo code http://users.csc.calpoly.edu/~jdalbey/SWE/pdl_std.html
+	>Filter	& Sorting
+Firstly need to sort the data, research best algorithm for this	decided by projectiles
+Filtering picking out elements that match conditions below.	
 		>Alphabetical
 		>Author
 		>Date
-		>Location
+		> Abundence
 		>Species
-	>Search
+	>Search 
 		>Generic Search
+		>(Binary Search)
 
+Short paragrpah detailing specific structure
 
 
 
