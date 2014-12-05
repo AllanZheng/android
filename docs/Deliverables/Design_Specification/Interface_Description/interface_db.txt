@@ -4,7 +4,7 @@ package uk.ac.aber.cs221.group11.db;
  * Outline for the Database Connection Class
  */
 public class DB_Connection {
-	private String sql_query;
+	private String sql_query; //Holds an SQL query to be sent to the database
 	
 	/**
 	 * Method to connect to the database 
@@ -27,8 +27,8 @@ public class DB_Connection {
  * Outline for the Local Database Class
  */
 public class DB_Local {
-	private Object[] species;
-	private Reserves[] reserves;
+	private Object[] species; //List of local species
+	private Reserves[] reserves; //List of local reserves
 	
 	/**
 	 * Method to get the Reserves from the Local DB

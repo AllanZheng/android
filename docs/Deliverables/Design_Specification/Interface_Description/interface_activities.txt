@@ -5,11 +5,11 @@ import uk.ac.aber.cs211.group11.data;
  * Outline for the class responsible for the login page
  * /
 public class Activity_Login {
-	private TextField username;
-	private TextField password;
-	private Button login;
-	private Button register;
-	private Button workOffline;
+	private TextField username; //Takes username input
+	private TextField password; //Takes password input
+	private Button login; //Submits user data to login
+	private Button register; //Navigates user to registration activity
+	private Button workOffline; //Work without internet connection
 
 	/**
 	 * Takes the user to the Register screen
@@ -40,10 +40,10 @@ public class Activity_Login {
  * Outline for the class responsible for the registration screen
  */
 public class Activity_Register {
-	private Textfield username;
-	private TextField password;
-	private TextField confirmPassword;
-	private Button createAccount;
+	private Textfield username; //Takes username input
+	private TextField password; //Takes password input
+	private TextField confirmPassword; //A second password input
+	private Button createAccount; //Submits data from user input
 
 	/**
 	 * Takes the user to the createAccount screen
@@ -80,9 +80,9 @@ public class Activity_Register {
  * Outline for class responsible for the main menu
  */
 public class Activity_MainMenu {
-	private ButtonContainer smallButtons;
-	private ButtonContainer largeButtons;
-	private RecordingsQueue recordingQueue;
+	private ButtonContainer smallButtons; //Holds small buttons on activity
+	private ButtonContainer largeButtons; //Holds large buttons on activity
+	private RecordingsQueue recordingQueue; //Recordings to be uploaded
 
 	/**
 	 * Takes the user to the Recordings screen
@@ -113,13 +113,13 @@ public class Activity_MainMenu {
  * Outline for class responsible for viewing recordings
  */
 public class Activity_Recordings {
-	private ImageContainer imageContainer;
-	private TextField name;
-	private TextField reserve;
-	private TextField plant;
-	private Textfield longitude;
-	private Textfield latitude;
-	private TextArea notes;
+	private ImageContainer imageContainer; //Displays image of recording
+	private TextField name; //Recording name
+	private TextField reserve; //Recording reserve
+	private TextField plant; //Plant associated with recording
+	private Textfield longitude; //Recording longitude
+	private Textfield latitude; //Recording latitude
+	private TextArea notes; //Notes on recording
 
 	/**
 	 * Takes the user to the PlantSpecies screen
