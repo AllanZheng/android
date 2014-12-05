@@ -1,0 +1,131 @@
+package uk.ac.aber.cs221.group11.activities;
+
+public interface Login {
+	
+	/**
+	 * Takes the user to the Register screen
+	 * @param v the current view
+	 */
+	public void toRegisterActivity(View v){}
+	
+	/**
+	 * Takes the user to the main menu screen
+	 * @param v the current view
+	 */
+	public void tomainMenu(View v){}
+	
+	/**
+	 * Gets the data from form input on the page
+	 * @param v the current view
+	 */
+	public void getPageData(View v){}
+
+	/**
+	 * Checks the login details against those already in the database
+	 * @return true if login details are correct, false if they are not
+	 */
+	public boolean checkLoginDetails(){}
+	
+}
+
+public interface Register {
+
+	/**
+	 * Takes the user to the createAccount screen
+	 * @param v the current view
+	 */
+	public void createAccount(View v){}
+	
+	/**
+	 * Takes the user to the MainMenu screen
+	 * @param v the current view
+	 */
+	public void toMainMenu(View v){}
+	
+	/**
+	 * Gets the data from form input on the page
+	 * @param v the current view
+	 */
+	public void getPageData(View v){}
+	
+	/**
+	 * Checks if the account already exists in the system
+	 * @return true if the account exists, false if not
+	 */
+	public boolean checkIfAccountExists(){}
+
+	/**
+	 * Checks if the password and re-enter password fields match
+	 * @return true if the passwords match, false if not
+	 */
+	public boolean checkIfPasswordsMatch(){}
+
+	
+}
+
+public interface MainMenu {
+
+	/**
+	 * Takes the user to the Recordings screen
+	 * @param v the current view
+	 */
+	public void toRecordings(View v){}
+	
+	/**
+	 * Takes the user to the PlantSpecies screen
+	 * @param v the current view
+	 */
+	public void toPlantSpecies(View v){}
+	
+	/**
+	 * Takes the user to the EditRecordings screen
+	 * @param v the current view
+	 */
+	public void toEditRecordings(View v){}
+	
+	/**
+	 * Takes the user to the logout screen
+	 * @param v the current view
+	 */
+	public void logout(View v){}
+	
+}
+
+public interface Recording {
+
+	/**
+	 * Takes the user to the PlantSpecies screen
+	 * @param v the current view
+	 */
+	public void toPlantSpecies(View v);
+	
+	/**
+	 * Takes the user to the MainMenu screen
+	 * @param v the current view
+	 */
+	public void toMainMenu(View v);
+	
+	/**
+	 * Gets the data from form input on the page
+	 * @param v the current view
+	 */
+	public void getPageData(View v);
+	
+	/**
+	 * Takes data from the current view
+	 * @param v the current view
+	 */
+	public void getData(View v);
+	
+	/**
+	 * Gets the current date to be added to the database
+	 */
+	public void getDate();
+	
+	/**
+	 * Sets up the system ready to take a recording
+	 * @return the recording
+	 */
+	public Recording constructRecordings();
+	
+}
