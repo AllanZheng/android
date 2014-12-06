@@ -1,8 +1,8 @@
 package data;
 
-import java.util.Collections;
 
-public class RecordingQueue extends Collections {
+
+public class RecordingQueue {
 
 	public RecordingQueue() {
 		// TODO Auto-generated constructor stub
