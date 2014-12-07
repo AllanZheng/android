@@ -794,10 +794,14 @@ containing a value of this type.
         public static final int abc_split_action_bar_is_narrow=0x7f050002;
     }
     public static final class color {
-        public static final int abc_search_url_text_holo=0x7f060003;
+        public static final int abc_search_url_text_holo=0x7f060007;
         public static final int abc_search_url_text_normal=0x7f060000;
         public static final int abc_search_url_text_pressed=0x7f060002;
         public static final int abc_search_url_text_selected=0x7f060001;
+        public static final int main_menu_background=0x7f060003;
+        public static final int main_menu_button=0x7f060004;
+        public static final int main_menu_button_container_background=0x7f060006;
+        public static final int main_menu_highlight=0x7f060005;
     }
     public static final class dimen {
         /**  Default height of an action bar. 
@@ -971,6 +975,15 @@ containing a value of this type.
         public static final int ic_launcher=0x7f020057;
     }
     public static final class id {
+        public static final int Button01=0x7f09004f;
+        public static final int Button02=0x7f09004e;
+        public static final int Button03=0x7f09004d;
+        public static final int Button04=0x7f09004c;
+        public static final int Button05=0x7f09004b;
+        public static final int Button06=0x7f090054;
+        public static final int Button07=0x7f090053;
+        public static final int Button08=0x7f090052;
+        public static final int Button09=0x7f090051;
         public static final int action_bar=0x7f09001a;
         public static final int action_bar_activity_content=0x7f090001;
         public static final int action_bar_container=0x7f090019;
@@ -987,6 +1000,7 @@ containing a value of this type.
         public static final int activity_chooser_view_content=0x7f090023;
         public static final int always=0x7f09000d;
         public static final int beginning=0x7f090014;
+        public static final int button1=0x7f090055;
         public static final int checkbox=0x7f09002b;
         public static final int collapseActionView=0x7f09000e;
         public static final int default_activity_button=0x7f090026;
@@ -1003,22 +1017,20 @@ containing a value of this type.
         public static final int ifRoom=0x7f09000f;
         public static final int image=0x7f090025;
         public static final int large_button_row_1=0x7f090044;
-        public static final int large_button_row_2=0x7f090048;
-        public static final int large_button_space_r1=0x7f090046;
-        public static final int large_button_space_r2=0x7f09004a;
+        public static final int large_button_row_2=0x7f090047;
         public static final int large_button_table=0x7f090043;
         public static final int left_icon=0x7f090031;
         public static final int listMode=0x7f090004;
         public static final int list_item=0x7f090027;
         public static final int main_menu_background_layout=0x7f090042;
-        public static final int manage_data_button=0x7f09004b;
+        public static final int manage_data_button=0x7f090049;
         public static final int middle=0x7f090016;
         public static final int never=0x7f090010;
         public static final int new_recording_button=0x7f090045;
-        public static final int new_species_button=0x7f090049;
+        public static final int new_species_button=0x7f090048;
         public static final int none=0x7f090017;
         public static final int normal=0x7f090005;
-        public static final int previous_recording_button=0x7f090047;
+        public static final int previous_recording_button=0x7f090046;
         public static final int progress_circular=0x7f090034;
         public static final int progress_horizontal=0x7f090035;
         public static final int radio=0x7f09002d;
@@ -1041,6 +1053,8 @@ containing a value of this type.
         public static final int split_action_bar=0x7f09001c;
         public static final int submit_area=0x7f09003f;
         public static final int tabMode=0x7f090006;
+        public static final int tableRow1=0x7f09004a;
+        public static final int tableRow2=0x7f090050;
         public static final int title=0x7f090029;
         public static final int title_container=0x7f090030;
         public static final int top_action_bar=0x7f09001e;

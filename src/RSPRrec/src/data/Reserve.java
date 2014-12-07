@@ -1,6 +1,8 @@
 package data;
 
-public class Reserve {
+import java.io.Serializable;
+
+public class Reserve implements Serializable{
 
 	private String name;
 	private String location;

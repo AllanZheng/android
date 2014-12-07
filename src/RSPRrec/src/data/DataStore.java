@@ -1,8 +1,10 @@
 package data;
 
+import java.io.Serializable;
+
 import utilities.Settings;
 
-public class DataStore {
+public class DataStore implements Serializable{
 
 	private Author currentUser;
 	private RecordingQueue allRecordings;

@@ -1,6 +1,8 @@
 package data;
 
-public class Species {
+import java.io.Serializable;
+
+public class Species implements Serializable{
 
 	private String commonName;
 	private String latinName;

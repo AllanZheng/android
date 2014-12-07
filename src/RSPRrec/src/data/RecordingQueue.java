@@ -1,6 +1,8 @@
 package data;
 
-public class RecordingQueue {
+import java.io.Serializable;
+
+public class RecordingQueue implements Serializable{
 
 	private Recording[] recordings;
 	

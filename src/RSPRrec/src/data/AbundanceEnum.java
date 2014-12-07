@@ -1,5 +1,7 @@
 package data;
 
-public enum AbundanceEnum {
+import java.io.Serializable;
+
+public enum AbundanceEnum implements Serializable{
 	D, A, F, O, R;
 }

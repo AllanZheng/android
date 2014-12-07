@@ -1,8 +1,10 @@
 package data;
 
+import java.io.Serializable;
+
 import ui.Status;
 
-public class Recording {
+public class Recording implements Serializable{
 
 	private Author author;
 	private Record record;

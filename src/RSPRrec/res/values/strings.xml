@@ -8,5 +8,9 @@
     <string name="new_species_button_string">New Species</string>
     <string name="data_management_button_string">Data Management</string>
     <string name="manage_data_button_string">Manage Data</string>
-
+    <color  name="main_menu_background">#545454</color>
+    <color  name="main_menu_button">#669900</color>
+	<color 	name="main_menu_highlight">#7FC123</color> 
+	<color  name="main_menu_button_container_background">#272727</color>
+	
 </resources>

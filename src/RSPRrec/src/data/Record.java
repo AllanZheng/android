@@ -1,8 +1,10 @@
 package data;
 
+import java.io.Serializable;
+
 import android.media.Image;
 
-public class Record {
+public class Record implements Serializable{
 
 	private Species species;
 	private char abundance;
