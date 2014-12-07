@@ -3,5 +3,10 @@
 
     <string name="app_name">RSPRrec</string>
     <string name="hello_world">Hello world!</string>
+    <string name="new_recording_button_string">New Recording</string>
+    <string name="previous_recording_button_string">Previous Recordings</string>
+    <string name="new_species_button_string">New Species</string>
+    <string name="data_management_button_string">Data Management</string>
+    <string name="manage_data_button_string">Manage Data</string>
 
 </resources>

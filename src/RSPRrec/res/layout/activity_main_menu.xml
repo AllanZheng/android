@@ -1,12 +1,90 @@
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_menu_background_layout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context="${relativePackage}.${activityClass}" >
 
-    <TextView
-        android:layout_width="wrap_content"
+    <TableLayout
+        android:id="@+id/large_button_table"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/hello_world" />
+        android:padding="20dp" >
 
-</RelativeLayout>
+        <TableRow
+            android:id="@+id/large_button_row_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <Button
+                android:id="@+id/new_recording_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:maxHeight="120dp"
+                android:maxWidth="120dp"
+                android:minHeight="120dp"
+                android:minWidth="120dp"
+                android:text="@string/new_recording_button_string" />
+            
+            <TextView
+                android:id="@+id/large_button_space_r1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:minEms="0"
+                android:text="" />
+
+            <Button
+                android:id="@+id/previous_recording_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:maxHeight="120dp"
+                android:maxWidth="120dp"
+                android:minHeight="120dp"
+                android:minWidth="120dp"
+                android:text="@string/previous_recording_button_string" />
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/large_button_row_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <Button
+                android:id="@+id/new_species_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:maxHeight="120dp"
+                android:maxWidth="120dp"
+                android:minHeight="120dp"
+                android:minWidth="120dp"
+                android:text="@string/new_species_button_string" />
+
+            <TextView
+                android:id="@+id/large_button_space_r2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:minEms="0"
+                android:text="" />
+
+            <Button
+                android:id="@+id/manage_data_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:maxHeight="120dp"
+                android:maxWidth="120dp"
+                android:minHeight="120dp"
+                android:minWidth="120dp"
+                android:text="@string/manage_data_button_string" />
+
+        </TableRow>
+    </TableLayout>
+
+</LinearLayout>

@@ -1002,13 +1002,23 @@ containing a value of this type.
         public static final int icon=0x7f090028;
         public static final int ifRoom=0x7f09000f;
         public static final int image=0x7f090025;
+        public static final int large_button_row_1=0x7f090044;
+        public static final int large_button_row_2=0x7f090048;
+        public static final int large_button_space_r1=0x7f090046;
+        public static final int large_button_space_r2=0x7f09004a;
+        public static final int large_button_table=0x7f090043;
         public static final int left_icon=0x7f090031;
         public static final int listMode=0x7f090004;
         public static final int list_item=0x7f090027;
+        public static final int main_menu_background_layout=0x7f090042;
+        public static final int manage_data_button=0x7f09004b;
         public static final int middle=0x7f090016;
         public static final int never=0x7f090010;
+        public static final int new_recording_button=0x7f090045;
+        public static final int new_species_button=0x7f090049;
         public static final int none=0x7f090017;
         public static final int normal=0x7f090005;
+        public static final int previous_recording_button=0x7f090047;
         public static final int progress_circular=0x7f090034;
         public static final int progress_horizontal=0x7f090035;
         public static final int radio=0x7f09002d;
@@ -1133,7 +1143,12 @@ containing a value of this type.
          */
         public static final int abc_shareactionprovider_share_with_application=0x7f0a000b;
         public static final int app_name=0x7f0a000d;
+        public static final int data_management_button_string=0x7f0a0012;
         public static final int hello_world=0x7f0a000e;
+        public static final int manage_data_button_string=0x7f0a0013;
+        public static final int new_recording_button_string=0x7f0a000f;
+        public static final int new_species_button_string=0x7f0a0011;
+        public static final int previous_recording_button_string=0x7f0a0010;
     }
     public static final class style {
         /** 
