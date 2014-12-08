@@ -1,22 +1,37 @@
 package activities;
 
 import android.app.Activity;
+import android.content.Intent;
+import android.group11.rsprrec.R;
+import android.os.Bundle;
 import android.view.View;
-import android.widget.RadioButton;
-import android.widget.SeekBar;
-import utilities.Settings;
 
 public class ActivitySettings extends Activity
 {
-	private SeekBar GPS;
-	private SeekBar sendPrompt;
-	private RadioButton WiFi;
-	private SeekBar savePhotoToDevice;
+	/*
+	 * SeekBar GPS
+	 * SeekBar sendPrompt
+	 * RadioButton WiFi
+	 * SeekBar savePhotoToDevice
+	*/
 	
-	public void getData(View v){};
+	@Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_settings);
+    }
 	
-	public boolean updateSessionSettings(){return true;};
+	public void getData(View v){
+		
+	};
 	
-	public void toMainMenu(View v){};
+	public boolean updateSessionSettings(){
+		return true;
+	};
+	
+	public void toMainMenu(View v){
+		Intent i  = new Intent(ActivitySettings.this, ActivityMainMenu.class);
+		startActivity(i);
+	};
 
 }
