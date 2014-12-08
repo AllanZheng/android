@@ -8,13 +8,6 @@ import android.view.View;
 
 public class ActivitySettings extends Activity
 {
-	/*
-	 * SeekBar GPS
-	 * SeekBar sendPrompt
-	 * RadioButton WiFi
-	 * SeekBar savePhotoToDevice
-	*/
-	
 	@Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

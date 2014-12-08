@@ -1376,19 +1376,19 @@ containing a value of this type.
         public static final int abc_config_showMenuShortcutsWhenKeyboardPresent=0x7f050003;
     }
     public static final class color {
-        public static final int abc_background_cache_hint_selector_material_dark=0x7f060035;
-        public static final int abc_background_cache_hint_selector_material_light=0x7f060036;
+        public static final int abc_background_cache_hint_selector_material_dark=0x7f060039;
+        public static final int abc_background_cache_hint_selector_material_light=0x7f06003a;
         public static final int abc_input_method_navigation_guard=0x7f060003;
-        public static final int abc_primary_text_disable_only_material_dark=0x7f060037;
-        public static final int abc_primary_text_disable_only_material_light=0x7f060038;
-        public static final int abc_primary_text_material_dark=0x7f060039;
-        public static final int abc_primary_text_material_light=0x7f06003a;
-        public static final int abc_search_url_text=0x7f06003b;
+        public static final int abc_primary_text_disable_only_material_dark=0x7f06003b;
+        public static final int abc_primary_text_disable_only_material_light=0x7f06003c;
+        public static final int abc_primary_text_material_dark=0x7f06003d;
+        public static final int abc_primary_text_material_light=0x7f06003e;
+        public static final int abc_search_url_text=0x7f06003f;
         public static final int abc_search_url_text_normal=0x7f060000;
         public static final int abc_search_url_text_pressed=0x7f060002;
         public static final int abc_search_url_text_selected=0x7f060001;
-        public static final int abc_secondary_text_material_dark=0x7f06003c;
-        public static final int abc_secondary_text_material_light=0x7f06003d;
+        public static final int abc_secondary_text_material_dark=0x7f060040;
+        public static final int abc_secondary_text_material_light=0x7f060041;
         public static final int accent_material_dark=0x7f06000f;
         public static final int accent_material_light=0x7f06000e;
         public static final int background_floating_material_dark=0x7f060006;
@@ -1448,6 +1448,10 @@ containing a value of this type.
         public static final int secondary_text_default_material_light=0x7f060025;
         public static final int secondary_text_disabled_material_dark=0x7f06002b;
         public static final int secondary_text_disabled_material_light=0x7f060029;
+        public static final int settings_background=0x7f060035;
+        public static final int settings_button=0x7f060036;
+        public static final int settings_container=0x7f060038;
+        public static final int settings_highlight=0x7f060037;
         public static final int switch_thumb_normal_material_dark=0x7f060012;
         public static final int switch_thumb_normal_material_light=0x7f060013;
     }
@@ -1655,7 +1659,8 @@ containing a value of this type.
         public static final int activity_chooser_view_content=0x7f090021;
         public static final int always=0x7f090014;
         public static final int beginning=0x7f09001b;
-        public static final int button1=0x7f090052;
+        public static final int btnApply=0x7f09005c;
+        public static final int btnBack=0x7f090052;
         public static final int checkbox=0x7f090029;
         public static final int collapseActionView=0x7f090015;
         public static final int decor_content_parent=0x7f09002f;
@@ -1675,6 +1680,7 @@ containing a value of this type.
         public static final int large_button_row_1=0x7f090041;
         public static final int large_button_row_2=0x7f090044;
         public static final int large_button_table=0x7f090040;
+        public static final int layout_buttons=0x7f09005b;
         public static final int listMode=0x7f09000a;
         public static final int list_item=0x7f090025;
         public static final int main_menu_background_layout=0x7f09003f;
@@ -1689,6 +1695,10 @@ containing a value of this type.
         public static final int progress_circular=0x7f090007;
         public static final int progress_horizontal=0x7f090008;
         public static final int radio=0x7f09002b;
+        public static final int radioGPS=0x7f090055;
+        public static final int radioPhotoToDevice=0x7f090058;
+        public static final int radioSendPrompt=0x7f090056;
+        public static final int radioWiFi=0x7f09005a;
         public static final int search_badge=0x7f090035;
         public static final int search_bar=0x7f090034;
         public static final int search_button=0x7f090036;
@@ -1699,6 +1709,7 @@ containing a value of this type.
         public static final int search_plate=0x7f090039;
         public static final int search_src_text=0x7f09003a;
         public static final int search_voice_btn=0x7f09003e;
+        public static final int settings_layout=0x7f090053;
         public static final int shortcut=0x7f09002a;
         public static final int showCustom=0x7f090010;
         public static final int showHome=0x7f090011;
@@ -1708,6 +1719,9 @@ containing a value of this type.
         public static final int tabMode=0x7f09000c;
         public static final int tableRow1=0x7f090047;
         public static final int tableRow2=0x7f09004d;
+        public static final int tableRow3=0x7f090057;
+        public static final int tableRow4=0x7f090059;
+        public static final int tblCheck=0x7f090054;
         public static final int title=0x7f090027;
         public static final int up=0x7f090001;
         public static final int useLogo=0x7f090013;
@@ -1825,12 +1839,18 @@ containing a value of this type.
          */
         public static final int abc_toolbar_collapse_description=0x7f0a0004;
         public static final int app_name=0x7f0a0010;
+        public static final int apply=0x7f0a001b;
+        public static final int back=0x7f0a001c;
         public static final int data_management_button_string=0x7f0a0015;
+        public static final int gps=0x7f0a0018;
         public static final int hello_world=0x7f0a0011;
         public static final int manage_data_button_string=0x7f0a0016;
         public static final int new_recording_button_string=0x7f0a0012;
         public static final int new_species_button_string=0x7f0a0014;
+        public static final int only_upload_with_wifi=0x7f0a001d;
         public static final int previous_recording_button_string=0x7f0a0013;
+        public static final int save_photo_to_device=0x7f0a001a;
+        public static final int send_prompt=0x7f0a0019;
         public static final int settings=0x7f0a0017;
     }
     public static final class style {
