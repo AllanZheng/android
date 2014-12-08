@@ -1658,9 +1658,10 @@ containing a value of this type.
         public static final int action_mode_close_button=0x7f090020;
         public static final int activity_chooser_view_content=0x7f090021;
         public static final int always=0x7f090014;
+        public static final int apply_button=0x7f09005c;
+        public static final int back_button=0x7f090052;
         public static final int beginning=0x7f09001b;
-        public static final int btnApply=0x7f09005c;
-        public static final int btnBack=0x7f090052;
+        public static final int bottom_button_linear=0x7f09005b;
         public static final int checkbox=0x7f090029;
         public static final int collapseActionView=0x7f090015;
         public static final int decor_content_parent=0x7f09002f;
@@ -1672,6 +1673,8 @@ containing a value of this type.
         public static final int end=0x7f09001c;
         public static final int expand_activities_button=0x7f090022;
         public static final int expanded_menu=0x7f090028;
+        public static final int gps_radio=0x7f090055;
+        public static final int gps_row=0x7f090047;
         public static final int home=0x7f090000;
         public static final int homeAsUp=0x7f09000e;
         public static final int icon=0x7f090026;
@@ -1680,7 +1683,7 @@ containing a value of this type.
         public static final int large_button_row_1=0x7f090041;
         public static final int large_button_row_2=0x7f090044;
         public static final int large_button_table=0x7f090040;
-        public static final int layout_buttons=0x7f09005b;
+        public static final int large_radio_table=0x7f090054;
         public static final int listMode=0x7f09000a;
         public static final int list_item=0x7f090025;
         public static final int main_menu_background_layout=0x7f09003f;
@@ -1691,14 +1694,12 @@ containing a value of this type.
         public static final int new_species_button=0x7f090045;
         public static final int none=0x7f09000f;
         public static final int normal=0x7f09000b;
+        public static final int photo_to_device_radio=0x7f090058;
+        public static final int photo_to_device_row=0x7f090057;
         public static final int previous_recording_button=0x7f090043;
         public static final int progress_circular=0x7f090007;
         public static final int progress_horizontal=0x7f090008;
         public static final int radio=0x7f09002b;
-        public static final int radioGPS=0x7f090055;
-        public static final int radioPhotoToDevice=0x7f090058;
-        public static final int radioSendPrompt=0x7f090056;
-        public static final int radioWiFi=0x7f09005a;
         public static final int search_badge=0x7f090035;
         public static final int search_bar=0x7f090034;
         public static final int search_button=0x7f090036;
@@ -1709,7 +1710,9 @@ containing a value of this type.
         public static final int search_plate=0x7f090039;
         public static final int search_src_text=0x7f09003a;
         public static final int search_voice_btn=0x7f09003e;
-        public static final int settings_layout=0x7f090053;
+        public static final int send_prompt_radio=0x7f090056;
+        public static final int send_prompt_row=0x7f09004d;
+        public static final int settings_background_layout=0x7f090053;
         public static final int shortcut=0x7f09002a;
         public static final int showCustom=0x7f090010;
         public static final int showHome=0x7f090011;
@@ -1717,14 +1720,11 @@ containing a value of this type.
         public static final int split_action_bar=0x7f090004;
         public static final int submit_area=0x7f09003c;
         public static final int tabMode=0x7f09000c;
-        public static final int tableRow1=0x7f090047;
-        public static final int tableRow2=0x7f09004d;
-        public static final int tableRow3=0x7f090057;
-        public static final int tableRow4=0x7f090059;
-        public static final int tblCheck=0x7f090054;
         public static final int title=0x7f090027;
         public static final int up=0x7f090001;
         public static final int useLogo=0x7f090013;
+        public static final int wifi_radio=0x7f09005a;
+        public static final int wifi_row=0x7f090059;
         public static final int withText=0x7f090018;
         public static final int wrap_content=0x7f090009;
     }

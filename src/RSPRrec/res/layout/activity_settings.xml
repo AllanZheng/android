@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/settings_layout"
+    android:id="@+id/settings_background_layout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/main_menu_background"
     android:orientation="vertical" >
 
     <TableLayout
-        android:id="@+id/tblCheck"
+        android:id="@+id/large_radio_table"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="5dp"
@@ -16,7 +16,7 @@
         android:padding="10dp" >
 
         <TableRow
-            android:id="@+id/tableRow1"
+            android:id="@+id/gps_row"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginBottom="5dp"
@@ -24,14 +24,14 @@
             android:padding="10dp" >
 
             <RadioButton
-                android:id="@+id/radioGPS"
+                android:id="@+id/gps_radio"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/gps" />
         </TableRow>
 
         <TableRow
-            android:id="@+id/tableRow2"
+            android:id="@+id/send_prompt_row"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginBottom="5dp"
@@ -39,14 +39,14 @@
             android:padding="10dp" >
 
             <RadioButton
-                android:id="@+id/radioSendPrompt"
+                android:id="@+id/send_prompt_radio"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/send_prompt" />
         </TableRow>
 
         <TableRow
-            android:id="@+id/tableRow3"
+            android:id="@+id/photo_to_device_row"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginBottom="5dp"
@@ -54,21 +54,21 @@
             android:padding="10dp" >
 
             <RadioButton
-                android:id="@+id/radioPhotoToDevice"
+                android:id="@+id/photo_to_device_radio"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/save_photo_to_device" />
         </TableRow>
 
         <TableRow
-            android:id="@+id/tableRow4"
+            android:id="@+id/wifi_row"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:background="@color/settings_button"
             android:padding="10dp" >
 
             <RadioButton
-                android:id="@+id/radioWiFi"
+                android:id="@+id/wifi_radio"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/only_upload_with_wifi" />
@@ -76,7 +76,7 @@
     </TableLayout>
 
     <LinearLayout
-        android:id="@+id/layout_buttons"
+        android:id="@+id/bottom_button_linear"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
@@ -85,7 +85,7 @@
         android:background="@color/settings_container" >
 
         <Button
-            android:id="@+id/btnBack"
+            android:id="@+id/back_button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="5dp"
@@ -96,7 +96,7 @@
             tools:ignore="NestedWeights" />
 
         <Button
-            android:id="@+id/btnApply"
+            android:id="@+id/apply_button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="5dp"
