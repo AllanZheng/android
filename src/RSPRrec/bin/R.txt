@@ -442,6 +442,7 @@ int id tableRow5 0x7f090066
 int id tableRow6 0x7f090068
 int id title 0x7f090027
 int id txt_recordings_latitude 0x7f090065
+int id txt_recordings_longitude 0x7f09006c
 int id txt_recordings_name 0x7f09005f
 int id txt_recordings_notes 0x7f090067
 int id up 0x7f090001

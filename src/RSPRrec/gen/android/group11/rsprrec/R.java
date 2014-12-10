@@ -1736,6 +1736,7 @@ containing a value of this type.
         public static final int tableRow6=0x7f090068;
         public static final int title=0x7f090027;
         public static final int txt_recordings_latitude=0x7f090065;
+        public static final int txt_recordings_longitude=0x7f09006c;
         public static final int txt_recordings_name=0x7f09005f;
         public static final int txt_recordings_notes=0x7f090067;
         public static final int up=0x7f090001;

@@ -92,7 +92,7 @@
                     android:text="@string/recording_latitude" />
 
                 <EditText
-                    android:id="@+id/txt_recordings_latitude"
+                    android:id="@+id/txt_recordings_longitude"
                     android:layout_width="wrap_content"
                     android:layout_height="fill_parent"
                     android:layout_weight="1"
