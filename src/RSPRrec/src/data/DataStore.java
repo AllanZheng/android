@@ -11,7 +11,7 @@ public class DataStore implements Serializable{
 	private Settings currentSettings;
 	
 	public DataStore() {
-		
+		currentSettings = new Settings();
 	}
 
 	public Author getCurrentUser() {

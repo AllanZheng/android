@@ -8,10 +8,6 @@
     <string name="new_species_button_string">New Species</string>
     <string name="data_management_button_string">Data Management</string>
     <string name="manage_data_button_string">Manage Data</string>
-    <color  name="main_menu_background">#545454</color>
-    <color  name="main_menu_button">#669900</color>
-	<color 	name="main_menu_highlight">#7FC123</color> 
-	<color  name="main_menu_button_container_background">#272727</color> 
 	<string name="settings">Settings</string>
 	<string name="gps">GPS</string> 
 	<string name="send_prompt">Send Prompt</string> 
@@ -19,11 +15,8 @@
 	<string name="apply">Apply</string> 
 	<string name="back">Back</string> 
 	<string name="only_upload_with_wifi">Only upload with WiFi</string>
-	<color  name="settings_background">#545454</color>
-    <color  name="settings_button">#669900</color>
-	<color 	name="settings_highlight">#7FC123</color> 
-	<color  name="settings_container">#272727</color>
-	<color name="recordings_text_backbround">#E5E5E5</color>
+	<string name="login_out_button_string">Log in</string>
+	<string name="settings_button_string">Settings</string>
 	<string name="recordings_name">Name</string>
 	<string name="recordings_reserves">Reserves</string>
 	<string name="recordings_plants">Plants</string>
@@ -35,4 +28,15 @@
 	<string name="recordings_namesearch">Name</string>
 	<string name="recordings_delete">Delete</string>
 	<string name="recordings_edit">Edit</string>
+	
+	
+	<color  name="settings_background">#545454</color>
+    <color  name="settings_button">#669900</color>
+	<color 	name="settings_highlight">#7FC123</color> 
+	<color  name="settings_container">#272727</color>
+	<color name="recordings_text_backbround">#E5E5E5</color>
+	<color  name="main_menu_background">#545454</color>
+    <color  name="main_menu_button">#669900</color>
+	<color 	name="main_menu_highlight">#7FC123</color> 
+	<color  name="main_menu_button_container_background">#272727</color> 
 </resources>

@@ -16,7 +16,7 @@
         android:padding="10dp" >
 
         <TableRow
-            android:id="@+id/gps_row"
+            android:id="@+id/small_button_row_1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginBottom="5dp"
@@ -31,7 +31,7 @@
         </TableRow>
 
         <TableRow
-            android:id="@+id/send_prompt_row"
+            android:id="@+id/small_button_row_2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginBottom="5dp"
@@ -96,13 +96,15 @@
             tools:ignore="NestedWeights" />
 
         <Button
-            android:id="@+id/apply_button"
+            android:id="@+id/login_out_button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="5dp"
             android:layout_weight="1"
             android:background="@color/settings_button"
+            android:onClick="toMainMenu"
             android:text="@string/apply" />
+
     </LinearLayout>
 
 </RelativeLayout>
