@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_menu_background"
+    android:orientation="vertical"
+    tools:context="activities.ActivityEditRecordings"
+    tools:ignore="PxUsage" >
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="8.83"
+        android:background="@color/main_menu_button_container_background"
+        android:maxHeight="150dp"
+        android:minHeight="200px"
+        android:src="@android:drawable/divider_horizontal_dim_dark" />
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.38" >
+
+        <TableRow
+            android:id="@+id/tableRow1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp" >
+
+            <SearchView
+                android:id="@+id/srh_recordings_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/recordings_text_backbround"
+                android:queryHint="@string/recordings_namesearch" >
+            </SearchView>
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp" >
+
+            <SearchView
+                android:id="@+id/srh_recordings_reserves"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/recordings_text_backbround"
+                android:queryHint="@string/recordings_reserves" >
+            </SearchView>
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp" >
+
+            <SearchView
+                android:id="@+id/srh_recordings_plants"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/recordings_text_backbround"
+                android:queryHint="@string/recordings_plants" >
+            </SearchView>
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <EditText
+                    android:id="@+id/txt_recordings_latitude"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:background="@color/recordings_text_backbround"
+                    android:ems="10"
+                    android:height="40dp"
+                    android:inputType="numberDecimal"
+                    android:minHeight="40dp"
+                    android:text="@string/recording_latitude" />
+
+                <EditText
+                    android:id="@+id/txt_recordings_latitude"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:background="@color/recordings_text_backbround"
+                    android:ems="10"
+                    android:height="40dp"
+                    android:inputType="numberDecimal"
+                    android:minHeight="40dp"
+                    android:text="@string/recordings_longitude" />
+            </LinearLayout>
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp" >
+
+            <EditText
+                android:id="@+id/txt_recordings_notes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.54"
+                android:background="@color/recordings_text_backbround"
+                android:ems="10"
+                android:height="40dp"
+                android:inputType="textMultiLine"
+                android:minHeight="70dp"
+                android:text="@string/recordings_notes" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <Button
+                    android:id="@+id/btn_recordings_delete"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".50"
+                    android:background="@color/main_menu_button"
+                    android:text="@string/recordings_delete" />
+
+                <Button
+                    android:id="@+id/btn_recordings_edit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.50"
+                    android:background="@color/main_menu_button"
+                    android:text="@string/recordings_edit" />
+            </LinearLayout>
+        </TableRow>
+    </TableLayout>
+
+</LinearLayout>

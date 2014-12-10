@@ -23,4 +23,16 @@
     <color  name="settings_button">#669900</color>
 	<color 	name="settings_highlight">#7FC123</color> 
 	<color  name="settings_container">#272727</color>
+	<color name="recordings_text_backbround">#E5E5E5</color>
+	<string name="recordings_name">Name</string>
+	<string name="recordings_reserves">Reserves</string>
+	<string name="recordings_plants">Plants</string>
+	<string name="recording_latitude">Latitude</string>
+	<string name="recordings_longitude">Longitude</string>
+	<string name="recordings_notes">Notes</string>
+	<string name="recordings_submit">Submit</string>
+	<string name="recordings_reset">Reset</string>
+	<string name="recordings_namesearch">Name</string>
+	<string name="recordings_delete">Delete</string>
+	<string name="recordings_edit">Edit</string>
 </resources>

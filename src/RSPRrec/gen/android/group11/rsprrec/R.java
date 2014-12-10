@@ -1376,19 +1376,19 @@ containing a value of this type.
         public static final int abc_config_showMenuShortcutsWhenKeyboardPresent=0x7f050003;
     }
     public static final class color {
-        public static final int abc_background_cache_hint_selector_material_dark=0x7f060039;
-        public static final int abc_background_cache_hint_selector_material_light=0x7f06003a;
+        public static final int abc_background_cache_hint_selector_material_dark=0x7f06003a;
+        public static final int abc_background_cache_hint_selector_material_light=0x7f06003b;
         public static final int abc_input_method_navigation_guard=0x7f060003;
-        public static final int abc_primary_text_disable_only_material_dark=0x7f06003b;
-        public static final int abc_primary_text_disable_only_material_light=0x7f06003c;
-        public static final int abc_primary_text_material_dark=0x7f06003d;
-        public static final int abc_primary_text_material_light=0x7f06003e;
-        public static final int abc_search_url_text=0x7f06003f;
+        public static final int abc_primary_text_disable_only_material_dark=0x7f06003c;
+        public static final int abc_primary_text_disable_only_material_light=0x7f06003d;
+        public static final int abc_primary_text_material_dark=0x7f06003e;
+        public static final int abc_primary_text_material_light=0x7f06003f;
+        public static final int abc_search_url_text=0x7f060040;
         public static final int abc_search_url_text_normal=0x7f060000;
         public static final int abc_search_url_text_pressed=0x7f060002;
         public static final int abc_search_url_text_selected=0x7f060001;
-        public static final int abc_secondary_text_material_dark=0x7f060040;
-        public static final int abc_secondary_text_material_light=0x7f060041;
+        public static final int abc_secondary_text_material_dark=0x7f060041;
+        public static final int abc_secondary_text_material_light=0x7f060042;
         public static final int accent_material_dark=0x7f06000f;
         public static final int accent_material_light=0x7f06000e;
         public static final int background_floating_material_dark=0x7f060006;
@@ -1442,6 +1442,7 @@ containing a value of this type.
         /**  26% of default values 
          */
         public static final int primary_text_disabled_material_light=0x7f060028;
+        public static final int recordings_text_backbround=0x7f060039;
         public static final int ripple_material_dark=0x7f06000c;
         public static final int ripple_material_light=0x7f06000d;
         public static final int secondary_text_default_material_dark=0x7f060027;
@@ -1578,6 +1579,7 @@ containing a value of this type.
         public static final int dialog_fixed_width_minor=0x7f07000d;
         public static final int disabled_alpha_material_dark=0x7f070001;
         public static final int disabled_alpha_material_light=0x7f070000;
+        public static final int recording_text_height=0x7f07002b;
     }
     public static final class drawable {
         public static final int abc_ab_share_pack_holo_dark=0x7f020000;
@@ -1662,6 +1664,8 @@ containing a value of this type.
         public static final int back_button=0x7f090052;
         public static final int beginning=0x7f09001b;
         public static final int bottom_button_linear=0x7f09005b;
+        public static final int btn_recordings_delete=0x7f090069;
+        public static final int btn_recordings_edit=0x7f09006a;
         public static final int checkbox=0x7f090029;
         public static final int collapseActionView=0x7f090015;
         public static final int decor_content_parent=0x7f09002f;
@@ -1680,6 +1684,7 @@ containing a value of this type.
         public static final int icon=0x7f090026;
         public static final int ifRoom=0x7f090016;
         public static final int image=0x7f090023;
+        public static final int imageView1=0x7f09005d;
         public static final int large_button_row_1=0x7f090041;
         public static final int large_button_row_2=0x7f090044;
         public static final int large_button_table=0x7f090040;
@@ -1718,9 +1723,21 @@ containing a value of this type.
         public static final int showHome=0x7f090011;
         public static final int showTitle=0x7f090012;
         public static final int split_action_bar=0x7f090004;
+        public static final int srh_recordings_name=0x7f09006b;
+        public static final int srh_recordings_plants=0x7f090063;
+        public static final int srh_recordings_reserves=0x7f090061;
         public static final int submit_area=0x7f09003c;
         public static final int tabMode=0x7f09000c;
+        public static final int tableRow1=0x7f09005e;
+        public static final int tableRow2=0x7f090060;
+        public static final int tableRow3=0x7f090062;
+        public static final int tableRow4=0x7f090064;
+        public static final int tableRow5=0x7f090066;
+        public static final int tableRow6=0x7f090068;
         public static final int title=0x7f090027;
+        public static final int txt_recordings_latitude=0x7f090065;
+        public static final int txt_recordings_name=0x7f09005f;
+        public static final int txt_recordings_notes=0x7f090067;
         public static final int up=0x7f090001;
         public static final int useLogo=0x7f090013;
         public static final int wifi_radio=0x7f09005a;
@@ -1779,7 +1796,9 @@ containing a value of this type.
         public static final int abc_simple_dropdown_hint=0x7f030016;
         public static final int activity_main_menu=0x7f030017;
         public static final int activity_settings=0x7f030018;
-        public static final int support_simple_spinner_dropdown_item=0x7f030019;
+        public static final int recordings_add_activities=0x7f030019;
+        public static final int recordings_edit_activities=0x7f03001a;
+        public static final int support_simple_spinner_dropdown_item=0x7f03001b;
     }
     public static final class string {
         /**  Content description for the action bar "home" affordance. [CHAR LIMIT=NONE] 
@@ -1849,6 +1868,17 @@ containing a value of this type.
         public static final int new_species_button_string=0x7f0a0014;
         public static final int only_upload_with_wifi=0x7f0a001d;
         public static final int previous_recording_button_string=0x7f0a0013;
+        public static final int recording_latitude=0x7f0a0021;
+        public static final int recordings_delete=0x7f0a0027;
+        public static final int recordings_edit=0x7f0a0028;
+        public static final int recordings_longitude=0x7f0a0022;
+        public static final int recordings_name=0x7f0a001e;
+        public static final int recordings_namesearch=0x7f0a0026;
+        public static final int recordings_notes=0x7f0a0023;
+        public static final int recordings_plants=0x7f0a0020;
+        public static final int recordings_reserves=0x7f0a001f;
+        public static final int recordings_reset=0x7f0a0025;
+        public static final int recordings_submit=0x7f0a0024;
         public static final int save_photo_to_device=0x7f0a001a;
         public static final int send_prompt=0x7f0a0019;
         public static final int settings=0x7f0a0017;
