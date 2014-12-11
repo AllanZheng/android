@@ -20,8 +20,7 @@ public class ActivityMainMenu extends Activity {
         login = (Button) findViewById(R.id.login_out_button);
         Bundle extra = getIntent().getExtras();
 		if(extra == null){
-			System.out.println("making new datastore");
-			dataStore = new DataStore();
+
 			login.setText("Log in");
 			login.setOnClickListener(new View.OnClickListener() {				
 				@Override
@@ -31,7 +30,6 @@ public class ActivityMainMenu extends Activity {
 			});
 			
 		}else{
-			System.out.println("datastore already exists");
 			login.setText("Log out");
 			login.setOnClickListener(new View.OnClickListener() {				
 				@Override
