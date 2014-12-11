@@ -143,6 +143,7 @@
                     android:layout_height="wrap_content"
                     android:layout_weight=".50"
                     android:background="@color/main_menu_button"
+                    android:onClick="toMainMenu"
                     android:text="@string/recordings_submit" />
 
                 <Button

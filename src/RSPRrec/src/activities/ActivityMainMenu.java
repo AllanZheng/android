@@ -46,7 +46,7 @@ public class ActivityMainMenu extends Activity {
     
     
     public void toRecordings(View v){
-		Intent i  = new Intent(ActivityMainMenu.this, ActivityRecordings.class);
+		Intent i  = new Intent(ActivityMainMenu.this, ActivityAddRecording.class);
 		startActivity(i);
     }
     

@@ -39,4 +39,13 @@
     <color  name="main_menu_button">#669900</color>
 	<color 	name="main_menu_highlight">#7FC123</color> 
 	<color  name="main_menu_button_container_background">#272727</color> 
+	<string name="login_title_string">Log In</string> 
+	<string name="username_string">Username</string> 
+	<string name="password_string">Password</string> 
+	<string name="login_button_string">Log in</string> 
+	<string name="register_button_string">Register</string> 
+	<string name="work_offline_button_string">Work Offline</string> 
+	<string name="register_title_string">Register</string> 
+	<string name="email_textview_string">email address</string> 
+	<string name="back_button_string">Back</string> 
 </resources>
