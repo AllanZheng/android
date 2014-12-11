@@ -3,6 +3,7 @@ package data;
 import java.io.Serializable;
 
 import utilities.Settings;
+import utilities.TestData;
 
 public class DataStore implements Serializable{
 
@@ -10,9 +11,11 @@ public class DataStore implements Serializable{
 	private RecordingQueue allRecordings;
 	private Settings currentSettings;
 	private boolean loggedIn;
+	private TestData td;
 	
 	public DataStore() {
 		currentSettings = new Settings();
+		td = new TestData();
 		loggedIn = false;
 	}
 
@@ -40,6 +43,7 @@ public class DataStore implements Serializable{
 		this.currentSettings = currentSettings;
 	}
 
+	
 	public boolean isLoggedIn() {
 		return loggedIn;
 	}
@@ -47,5 +51,17 @@ public class DataStore implements Serializable{
 	public void setLoggedIn(boolean loggedIn) {
 		this.loggedIn = loggedIn;
 	}
+	
+	/*TEST DATA */
+	
+
+	public TestData getTd() {
+		return td;
+	}
+
+	public void setTd(TestData td) {
+		this.td = td;
+	}
+	
 
 }

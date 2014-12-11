@@ -14,7 +14,6 @@ import android.widget.Toast;
 public class ActivityLogin extends Activity {
 	
 	private DataStore dataStore;
-	private TestData td;
 	private EditText usernameField;
 	private EditText passwordField;
 	
@@ -31,7 +30,7 @@ public class ActivityLogin extends Activity {
     private boolean collectData(View v){
     	String uid = usernameField.getText().toString();
     	String pass = usernameField.getText().toString();
-    	boolean validAccount = td.checkAccount(uid, pass);
+    	boolean validAccount = dataStore.getTd().checkAccount(uid, pass);
     	return validAccount;
     }
     
@@ -51,8 +50,16 @@ public class ActivityLogin extends Activity {
 			Toast toast = Toast.makeText(context, text, duration);
 			toast.show();
 		}else{
+			dataStore.setLoggedIn(true);
 			i.putExtra("DataStore", dataStore);
 			startActivity(i);
 		}
+    }
+    
+    public void offlineToMainMenu(View v){
+    	Intent i  = new Intent(ActivityLogin.this, ActivityMainMenu.class);
+    	dataStore.setLoggedIn(false);
+    	i.putExtra("DataStore", dataStore);
+    	startActivity(i);
     }
 }

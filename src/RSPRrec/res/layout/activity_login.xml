@@ -61,6 +61,7 @@
         android:layout_marginLeft="15dp"
         android:layout_marginRight="15dp"
         android:layout_marginTop="70dp"
+        android:onClick="toMainMenu"
         android:text="@string/login_button_string" />
 
     <Button
@@ -71,6 +72,7 @@
         android:layout_marginLeft="15dp"
         android:layout_marginRight="15dp"
         android:layout_marginTop="2dp"
+        android:onClick="toRegister"
         android:text="@string/register_button_string" />
 
     <Button
@@ -81,6 +83,7 @@
         android:layout_marginLeft="15dp"
         android:layout_marginRight="15dp"
         android:layout_marginTop="2dp"
+        android:onClick="offlineToMainMenu"
         android:text="@string/work_offline_button_string" />
     
 </LinearLayout>

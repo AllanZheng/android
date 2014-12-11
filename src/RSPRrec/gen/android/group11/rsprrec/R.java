@@ -1872,22 +1872,25 @@ containing a value of this type.
         /**  Content description for the Toolbar icon used to collapse an expanded action mode. [CHAR LIMIT=NONE] 
          */
         public static final int abc_toolbar_collapse_description=0x7f0a0004;
+        public static final int addRecording=0x7f0a002e;
         public static final int app_name=0x7f0a0010;
         public static final int apply=0x7f0a001b;
         public static final int back=0x7f0a001c;
-        public static final int back_button_string=0x7f0a0033;
+        public static final int back_button_string=0x7f0a0037;
         public static final int data_management_button_string=0x7f0a0015;
-        public static final int email_textview_string=0x7f0a0032;
+        public static final int editPlantRecording=0x7f0a002d;
+        public static final int email_textview_string=0x7f0a0036;
         public static final int gps=0x7f0a0018;
         public static final int hello_world=0x7f0a0011;
-        public static final int login_button_string=0x7f0a002e;
+        public static final int login_button_string=0x7f0a0032;
         public static final int login_out_button_string=0x7f0a001e;
-        public static final int login_title_string=0x7f0a002b;
+        public static final int login_title_string=0x7f0a002f;
+        public static final int mainMenu=0x7f0a002b;
         public static final int manage_data_button_string=0x7f0a0016;
         public static final int new_recording_button_string=0x7f0a0012;
         public static final int new_species_button_string=0x7f0a0014;
         public static final int only_upload_with_wifi=0x7f0a001d;
-        public static final int password_string=0x7f0a002d;
+        public static final int password_string=0x7f0a0031;
         public static final int previous_recording_button_string=0x7f0a0013;
         public static final int recording_latitude=0x7f0a0023;
         public static final int recordings_delete=0x7f0a0029;
@@ -1900,14 +1903,15 @@ containing a value of this type.
         public static final int recordings_reserves=0x7f0a0021;
         public static final int recordings_reset=0x7f0a0027;
         public static final int recordings_submit=0x7f0a0026;
-        public static final int register_button_string=0x7f0a002f;
-        public static final int register_title_string=0x7f0a0031;
+        public static final int register=0x7f0a002c;
+        public static final int register_button_string=0x7f0a0033;
+        public static final int register_title_string=0x7f0a0035;
         public static final int save_photo_to_device=0x7f0a001a;
         public static final int send_prompt=0x7f0a0019;
         public static final int settings=0x7f0a0017;
         public static final int settings_button_string=0x7f0a001f;
-        public static final int username_string=0x7f0a002c;
-        public static final int work_offline_button_string=0x7f0a0030;
+        public static final int username_string=0x7f0a0030;
+        public static final int work_offline_button_string=0x7f0a0034;
     }
     public static final class style {
         /** 

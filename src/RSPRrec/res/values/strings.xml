@@ -28,7 +28,10 @@
 	<string name="recordings_namesearch">Name</string>
 	<string name="recordings_delete">Delete</string>
 	<string name="recordings_edit">Edit</string>
-	
+	<string name="mainMenu">Main Menu</string>
+	<string name="register">Register</string>
+	<string name="editPlantRecording">Edit Plant Recording</string>
+	<string name="addRecording">Add Recording</string>
 	
 	<color  name="settings_background">#545454</color>
     <color  name="settings_button">#669900</color>

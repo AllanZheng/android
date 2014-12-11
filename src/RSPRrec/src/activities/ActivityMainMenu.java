@@ -18,9 +18,11 @@ public class ActivityMainMenu extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main_menu);
         login = (Button) findViewById(R.id.login_out_button);
-        Bundle extra = getIntent().getExtras();
-		if(extra == null){
-
+        dataStore = (DataStore) getIntent().getSerializableExtra("DataStore");
+        if(dataStore == null){
+        	System.out.println("datastore is null in main menu");
+        }
+		if(dataStore.isLoggedIn() == false){
 			login.setText("Log in");
 			login.setOnClickListener(new View.OnClickListener() {				
 				@Override
@@ -38,7 +40,7 @@ public class ActivityMainMenu extends Activity {
 				}
 			});
 			Intent intent = getIntent();
-			dataStore = (DataStore) intent.getSerializableExtra("DataStorage");
+			dataStore = (DataStore) intent.getSerializableExtra("DataStore");
 		}
     }
     
@@ -56,19 +58,18 @@ public class ActivityMainMenu extends Activity {
     
     public void toSettings(View v){
     	Intent i = new Intent(ActivityMainMenu.this, ActivitySettings.class);
-    	i.putExtra("DataStorage", dataStore);
+    	i.putExtra("DataStore", dataStore);
     	startActivity(i);
     }   
     
     public void toLogin(View v){
     	Intent i = new Intent(ActivityMainMenu.this, ActivityLogin.class);
-    	i.putExtra("DataStorage", dataStore);
+    	i.putExtra("DataStore", dataStore);
     	startActivity(i);
     }
     
     public void logout(View v){
     	Intent i = new Intent(ActivityMainMenu.this, ActivityLogin.class);
-    	//TODO: destory dataStore
     	startActivity(i);
     }
  

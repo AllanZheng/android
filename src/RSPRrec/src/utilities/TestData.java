@@ -3,12 +3,16 @@ package utilities;
 import java.io.Serializable;
 import java.util.ArrayList;
 
-public class TestData {
+public class TestData implements Serializable{
 	
 	private ArrayList<Account> accounts;
 	
 	public TestData(){
 		accounts = new ArrayList<Account>();
+		Account cwl = new Account("cwl", "password");
+		Account admin = new Account("elo9", "admin");
+		accounts.add(cwl);
+		accounts.add(admin);
 	}
 	
 	public void addAccount(String uid, String pass){
@@ -60,6 +64,16 @@ public class TestData {
 		}
 	
 	}
+
+
+	public ArrayList<Account> getAccounts() {
+		return accounts;
+	}
+
+	public void setAccounts(ArrayList<Account> accounts) {
+		this.accounts = accounts;
+	}
+	
 	
 	
 }

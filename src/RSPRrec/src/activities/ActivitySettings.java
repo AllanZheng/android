@@ -22,7 +22,7 @@ public class ActivitySettings extends Activity{
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_settings);
 		Intent intent = getIntent();
-		dataStore = (DataStore) intent.getSerializableExtra("DataStorage");
+		dataStore = (DataStore) intent.getSerializableExtra("DataStore");
         gps = (RadioButton) findViewById(R.id.gps_radio);
         sendPrompt = (RadioButton) findViewById(R.id.send_prompt_radio);
         photoSave = (RadioButton) findViewById(R.id.photo_to_device_radio);
@@ -67,7 +67,7 @@ public class ActivitySettings extends Activity{
 	public void toMainMenu(View v){
 		Intent i  = new Intent(ActivitySettings.this, ActivityMainMenu.class);
 		getData(v);
-		i.putExtra("DataStorage", dataStore);
+		i.putExtra("DataStore", dataStore);
 		startActivity(i);
 	}
 
