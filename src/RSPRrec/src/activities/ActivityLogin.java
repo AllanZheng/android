@@ -36,6 +36,7 @@ public class ActivityLogin extends Activity {
     
     public void toRegister(View v){
 		Intent i  = new Intent(ActivityLogin.this, ActivityRegister.class);
+		i.putExtra("DataStore", dataStore);
 		startActivity(i);
     }
     

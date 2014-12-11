@@ -92,6 +92,7 @@
             android:layout_marginTop="8dp"
             android:layout_weight="1"
             android:background="@color/settings_button"
+            android:onClick="toMainMenuBack"
             android:text="@string/back"
             tools:ignore="NestedWeights" />
 

@@ -32,6 +32,7 @@
                 android:maxWidth="100dp"
                 android:minHeight="100dp"
                 android:minWidth="100dp"
+                android:onClick="toAddRecording"
                 android:padding="15dp"
                 android:text="@string/new_recording_button_string" />
 

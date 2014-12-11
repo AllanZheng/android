@@ -19,9 +19,6 @@ public class ActivityMainMenu extends Activity {
         setContentView(R.layout.activity_main_menu);
         login = (Button) findViewById(R.id.login_out_button);
         dataStore = (DataStore) getIntent().getSerializableExtra("DataStore");
-        if(dataStore == null){
-        	System.out.println("datastore is null in main menu");
-        }
 		if(dataStore.isLoggedIn() == false){
 			login.setText("Log in");
 			login.setOnClickListener(new View.OnClickListener() {				
@@ -45,13 +42,9 @@ public class ActivityMainMenu extends Activity {
     }
     
     
-    public void toRecordings(View v){
+    public void toAddRecording(View v){
 		Intent i  = new Intent(ActivityMainMenu.this, ActivityAddRecording.class);
-		startActivity(i);
-    }
-    
-    public void toPlantSpecies(View v){
-		Intent i  = new Intent(ActivityMainMenu.this, ActivityPlantSpecies.class);
+		i.putExtra("DataStore", dataStore);
 		startActivity(i);
     }
     

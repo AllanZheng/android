@@ -32,6 +32,9 @@ public class ActivityRegister extends Activity {
     	//String authorEmail = emailField.getText().toString();
     	String authorName = uidField.getText().toString();
     	String authorPass = passField.getText().toString();
+    	/*if(authorName.equals("") || authorPass.equals("") || authorEmail.equals("") ){
+    		
+    	}*/
     	dataStore.getTd().addAccount(authorName, authorPass);
     	
     }
