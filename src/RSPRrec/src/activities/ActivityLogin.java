@@ -1,6 +1,7 @@
 package activities;
 
 import utilities.TestData;
+import data.Author;
 import data.DataStore;
 import android.app.Activity;
 import android.content.Context;
@@ -29,7 +30,7 @@ public class ActivityLogin extends Activity {
     
     private boolean collectData(View v){
     	String uid = usernameField.getText().toString();
-    	String pass = usernameField.getText().toString();
+    	String pass = passwordField.getText().toString();
     	boolean validAccount = dataStore.getTd().checkAccount(uid, pass);
     	return validAccount;
     }
@@ -52,6 +53,9 @@ public class ActivityLogin extends Activity {
 			toast.show();
 		}else{
 			dataStore.setLoggedIn(true);
+			String uid = usernameField.getText().toString();
+			String pass = passwordField.getText().toString();
+			setSessionAuthor(uid, pass);
 			i.putExtra("DataStore", dataStore);
 			startActivity(i);
 		}
@@ -62,5 +66,9 @@ public class ActivityLogin extends Activity {
     	dataStore.setLoggedIn(false);
     	i.putExtra("DataStore", dataStore);
     	startActivity(i);
+    }
+    
+    private void setSessionAuthor(String uid, String pass){
+    	//Author current = new Author(uid, pass, 01234567891 , "email from server");
     }
 }

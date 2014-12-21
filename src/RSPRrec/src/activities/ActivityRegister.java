@@ -3,11 +3,13 @@ package activities;
 import utilities.TestData;
 import data.DataStore;
 import android.app.Activity;
+import android.content.Context;
 import android.content.Intent;
 import android.group11.rsprrec.R;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
+import android.widget.Toast;
 
 public class ActivityRegister extends Activity {
 	
@@ -28,23 +30,32 @@ public class ActivityRegister extends Activity {
         
     }
     
-    public void collectData(View v){
-    	//String authorEmail = emailField.getText().toString();
+    public boolean collectData(View v){
+    	String authorEmail = emailField.getText().toString();
     	String authorName = uidField.getText().toString();
     	String authorPass = passField.getText().toString();
-    	/*if(authorName.equals("") || authorPass.equals("") || authorEmail.equals("") ){
-    		
-    	}*/
-    	dataStore.getTd().addAccount(authorName, authorPass);
+    	if(authorName.equals("") || authorPass.equals("") || authorEmail.equals("") ){
+			Context context = getApplicationContext();
+			CharSequence text = "Please enter data into all the fields in order to create an account";
+			int duration = Toast.LENGTH_SHORT;
+			
+			Toast toast = Toast.makeText(context, text, duration);
+			toast.show();
+			return false;
+    	}else{
+    		dataStore.getTd().addAccount(authorName, authorPass);
+    		return true;
+    	}
     	
     }
     
     public void toMainMenu(View v){
     	Intent i = new Intent(ActivityRegister.this, ActivityMainMenu.class);
-    	collectData(v);
-    	i.putExtra("DataStore", dataStore);
-    	startActivity(i);
-    	
+    	boolean valid = collectData(v);
+    	if(valid == true){
+    		i.putExtra("DataStore", dataStore);
+    		startActivity(i);
+    	}
     }
     
     public void toLogin(View v){
