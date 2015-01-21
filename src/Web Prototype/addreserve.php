@@ -1,7 +1,10 @@
+<?php
+require_once("./global.php");
+?>
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Plant Database: You </title>
+        <title>Plant Database: New </title>
         <link rel="stylesheet" type="text/css" href="pd.css">
             <link rel="icon" type="image/x-icon" href="favicon.ico" />
             <head>
@@ -9,10 +12,10 @@
                 <div class="page-wrap">
                     <nav>
                         <ul id="navigation">
-                            <li><a href="you.html">You</a></li>
-                            <li><a href="view.html">View</a></li>
-                            <li><a href="new.html">New</a></li>
-                            <li><a href="index.html">Logout</a></li>
+                            <li><a href="profile.php">My Profile</a></li>
+                            <li><a href="recordings.php">View Recordings</a></li>
+                            <li><a href="addreserve.php">New Reserve</a></li>
+                            <li><a href="logout.php">Logout</a></li>
                         </ul>
                     </nav>
                     
@@ -20,11 +23,8 @@
                     
                     
                     <section>
-                        <h1>You</h1><br>
-                        <p> Last login: 2014-11-18 17:14:33</p><br>
-                        
-                        <p> Name: Nigel Hardy </p>
-                        <p> Organisation: Aberystwyth University </p><br>
+                        <h1>New</h1><br>
+                        <h2> Add a reserve </h2>
                     </section>
                     
                     
@@ -33,7 +33,7 @@
                 </div>
                 
                 <footer class="site-footer">
-                    <p>&copy; 2014 - <a href="about.html"> About </a><a href="#"> Download </a></p>
+                    <p>&copy; 2014 - <a href="about.php"> About </a><a href="#"> Download </a></p>
                 </footer>
                 
                 </body>
