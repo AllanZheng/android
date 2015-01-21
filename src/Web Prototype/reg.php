@@ -36,7 +36,7 @@
                                         <input type="text" name="password"> <br>
                                             </form>
                         <!-- outside of form so doesnt submit and can be linked -->
-                        <a href="index.html"><input type="submit" value="Register"></a>
+                        <a href="index.php"><input type="submit" value="Register"></a>
                     </section>
                     
                     
@@ -45,7 +45,7 @@
                 </div>
                 
                 <footer class="site-footer">
-                    <p>&copy; 2014 - <a href="about.html"> About </a><a href="#"> Download </a></p>
+                    <p>&copy; 2014 - <a href="about.php"> About </a><a href="#"> Download </a></p>
                 </footer>
                 
                 </body>

@@ -9,10 +9,10 @@
                 <div class="page-wrap">
                     <nav>
                         <ul id="navigation">
-                            <li><a href="you.html">You</a></li>
-                            <li><a href="view.html">View</a></li>
-                            <li><a href="new.html">New</a></li>
-                            <li><a href="index.html">Logout</a></li>
+                            <li><a href="profile.php">My Profile</a></li>
+                            <li><a href="recordings.php">View Recordings</a></li>
+                            <li><a href="addreserve.php">New Reserve</a></li>
+                            <li><a href="logout.php">Logout</a></li>
                         </ul>
                     </nav>
                     
@@ -33,7 +33,7 @@
                 </div>
                 
                 <footer class="site-footer">
-                    <p>&copy; 2014 - <a href="about.html"> About </a><a href="#"> Download </a></p>
+                    <p>&copy; 2014 - <a href="about.php"> About </a><a href="#"> Download </a></p>
                 </footer>
                 
                 </body>

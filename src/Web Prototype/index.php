@@ -30,8 +30,8 @@
                                 <input type="text" name="password"> <br>
                                     </form>
                         <!-- outside of form so doesnt submit and can be linked -->
-                        <a href="you.html"><input type="submit" value="Login"></a><br><br>
-                        <small>Click <a href="reg.html">here</a> to register.</small>
+                        <a href="profile.php"><input type="submit" value="Login"></a><br><br>
+                        <small>Click <a href="reg.php">here</a> to register.</small>
                     </section>
                     
                     
@@ -40,7 +40,7 @@
                 </div>
                 
                 <footer class="site-footer">
-                    <p>&copy; 2014 - <a href="about.html"> About </a><a href="#"> Download </a></p>
+                    <p>&copy; 2014 - <a href="about.php"> About </a><a href="#"> Download </a></p>
                 </footer>
                 
                 </body>
