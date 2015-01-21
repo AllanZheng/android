@@ -1,3 +1,6 @@
+<?php
+require_once("./global.php");
+?>
 <!DOCTYPE html>
 <html>
     <head>
@@ -29,52 +32,12 @@
                                 <th class="tg-8xqh">Time Created</th>
                                 <th class="tg-8xqh">Reserve</th>
                             </tr>
+							
+					
                             <tr>
                                 <td class="tg-031e">1</td>
                                 <td class="tg-031e">Hedgehog Stonewort</td>
                                 <td class="tg-031e">Chara aculeolata</td>
-                                <td class="tg-031e">2014-11-18 17:14:33</td>
-                                <td class="tg-031e">Unknown</td>
-                            </tr>
-                            <tr>
-                                <td class="tg-031e">2</td>
-                                <td class="tg-031e">Rough Stonewort</td>
-                                <td class="tg-031e">Chara aspera</td>
-                                <td class="tg-031e">2014-11-18 17:14:33</td>
-                                <td class="tg-031e">Unknown</td>
-                            </tr>
-                            <tr>
-                                <td class="tg-031e">3</td>
-                                <td class="tg-031e">Baltic Stonewort</td>
-                                <td class="tg-031e">Chara baltica</td>
-                                <td class="tg-031e">2014-11-18 17:14:33</td>
-                                <td class="tg-031e">Unknown</td>
-                            </tr>
-                            <tr>
-                                <td class="tg-031e">4</td>
-                                <td class="tg-031e">Braun's Stonewort</td>
-                                <td class="tg-031e">Chara braunii</td>
-                                <td class="tg-031e">2014-11-18 17:14:33</td>
-                                <td class="tg-031e">Unknown</td>
-                            </tr>
-                            <tr>
-                                <td class="tg-031e">5</td>
-                                <td class="tg-031e">Bearded Stonewor</td>
-                                <td class="tg-031e">Chara canescens</td>
-                                <td class="tg-031e">2014-11-18 17:14:33</td>
-                                <td class="tg-031e">Unknown</td>
-                            </tr>
-                            <tr>
-                                <td class="tg-031e">6</td>
-                                <td class="tg-031e">Convergent Stonewort</td>
-                                <td class="tg-031e">Chara connivens</td>
-                                <td class="tg-031e">2014-11-18 17:14:33</td>
-                                <td class="tg-031e">Unknown</td>
-                            </tr>
-                            <tr>
-                                <td class="tg-031e">7</td>
-                                <td class="tg-031e">Opposite Stonewort</td>
-                                <td class="tg-031e">Chara contraria</td>
                                 <td class="tg-031e">2014-11-18 17:14:33</td>
                                 <td class="tg-031e">Unknown</td>
                             </tr>
