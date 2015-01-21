@@ -5,7 +5,7 @@ require_once("./global.php");
 <html>
     <head>
         <title> </title>
-        <link rel="stylesheet" type="text/css" href="pd.css">
+        <link rel="stylesheet" type="text/css" href="main.css">
             <link rel="icon" type="image/x-icon" href="favicon.ico" />
             <head>
                 

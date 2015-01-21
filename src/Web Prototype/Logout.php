@@ -1,6 +1,3 @@
-<?php
-
-?>
 <!DOCTYPE html>
 <html>
 <body>
@@ -15,7 +12,7 @@ session_destroy();
 // redirects you back to the index 
 header('Location: index.php');
 exit;
-
+    
 ?>
 
 </body>
