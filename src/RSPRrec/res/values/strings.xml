@@ -49,4 +49,13 @@
 	<string name="register_title_string">Register</string> 
 	<string name="email_textview_string">email address</string> 
 	<string name="back_button_string">Back</string> 
+	
+	<string-array name="abundance_array">
+	    <item >Dominant</item>
+	    <item >Abundant</item>
+	    <item >Frequent</item>
+	    <item >Occasional</item>
+	    <item >Rare</item>
+	</string-array>
+	
 </resources>

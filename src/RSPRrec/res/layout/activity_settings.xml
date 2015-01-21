@@ -4,7 +4,7 @@
     android:id="@+id/settings_background_layout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/main_menu_background"
+    android:background="@color/swatch3_0"
     android:orientation="vertical" >
 
     <TableLayout
@@ -12,7 +12,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="5dp"
-        android:background="@color/settings_container"
+        android:background="@color/swatch5_0"
         android:padding="10dp" >
 
         <TableRow
@@ -20,7 +20,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginBottom="5dp"
-            android:background="@color/settings_button"
+            android:background="@color/swatch4_0"
             android:padding="10dp" >
 
             <RadioButton
@@ -35,7 +35,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginBottom="5dp"
-            android:background="@color/settings_button"
+            android:background="@color/swatch4_0"
             android:padding="10dp" >
 
             <RadioButton
@@ -50,7 +50,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginBottom="5dp"
-            android:background="@color/settings_button"
+            android:background="@color/swatch4_0"
             android:padding="10dp" >
 
             <RadioButton
@@ -64,7 +64,7 @@
             android:id="@+id/wifi_row"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:background="@color/settings_button"
+            android:background="@color/swatch4_0"
             android:padding="10dp" >
 
             <RadioButton
@@ -82,7 +82,7 @@
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:layout_margin="5dp"
-        android:background="@color/settings_container" >
+        android:background="@color/swatch5_0" >
 
         <Button
             android:id="@+id/back_button"
@@ -91,7 +91,7 @@
             android:layout_margin="5dp"
             android:layout_marginTop="8dp"
             android:layout_weight="1"
-            android:background="@color/settings_button"
+            android:background="@color/swatch4_0"
             android:onClick="toMainMenuBack"
             android:text="@string/back"
             tools:ignore="NestedWeights" />
@@ -102,7 +102,7 @@
             android:layout_height="wrap_content"
             android:layout_margin="5dp"
             android:layout_weight="1"
-            android:background="@color/settings_button"
+            android:background="@color/swatch4_0"
             android:onClick="toMainMenu"
             android:text="@string/apply" />
 

@@ -35,7 +35,7 @@
                 android:id="@+id/srh_recordings_reserves"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:background="@color/recordings_text_backbround"
+                android:background="@color/swatch4_2"
                 android:queryHint="@string/recordings_reserves" >
             </SearchView>
 
@@ -51,7 +51,7 @@
                 android:id="@+id/srh_recordings_plants"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:background="@color/recordings_text_backbround"
+                android:background="@color/swatch4_2"
                 android:queryHint="@string/recordings_plants" >
             </SearchView>
 
@@ -67,14 +67,9 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content" >
 
-                <TextView
-                    android:id="@+id/textView1"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="TextView" />
-
                 <Spinner
                     android:id="@+id/spinner1"
+                    android:background="@color/swatch4_2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
@@ -89,36 +84,6 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:paddingTop="10dp" >
-
-            <LinearLayout
-                android:id="@+id/Layout_Linear_lng_lat_divide"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content" >
-
-                <EditText
-                    android:id="@+id/txt_recordings_latitude"
-                    android:layout_width="wrap_content"
-                    android:layout_height="fill_parent"
-                    android:layout_weight="1"
-                    android:background="@color/recordings_text_backbround"
-                    android:ems="10"
-                    android:height="40dp"
-                    android:inputType="numberDecimal"
-                    android:minHeight="40dp"
-                    android:text="@string/recording_latitude" />
-
-                <EditText
-                    android:id="@+id/txt_recordings_longitude"
-                    android:layout_width="wrap_content"
-                    android:layout_height="fill_parent"
-                    android:layout_weight="1"
-                    android:background="@color/recordings_text_backbround"
-                    android:ems="10"
-                    android:height="40dp"
-                    android:inputType="numberDecimal"
-                    android:minHeight="40dp"
-                    android:text="@string/recordings_longitude" />
-            </LinearLayout>
         </TableRow>
 
         <TableRow
@@ -132,7 +97,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="0.54"
-                android:background="@color/recordings_text_backbround"
+                android:background="@color/swatch4_2"
                 android:ems="10"
                 android:height="40dp"
                 android:inputType="textMultiLine"
@@ -154,7 +119,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight=".50"
-                    android:background="@color/main_menu_button"
+                    android:background="@color/swatch4_0"
                     android:onClick="toMainMenu"
                     android:text="@string/recordings_submit" />
 
@@ -163,7 +128,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="0.50"
-                    android:background="@color/main_menu_button"
+                    android:background="@color/swatch4_0"
                     android:text="@string/recordings_reset" />
             </LinearLayout>
         </TableRow>
