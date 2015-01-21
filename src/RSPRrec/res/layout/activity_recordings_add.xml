@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/Layout_Linear_Root_addRecording"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/swatch3_0"
+    android:orientation="vertical"
+    tools:context="activities.ActivityRecordings"
+    tools:ignore="PxUsage" >
+
+    <ImageView
+        android:id="@+id/img_addRecording"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="8.83"
+        android:background="@color/swatch5_0"
+        android:maxHeight="150dp"
+        android:minHeight="200px"
+        android:src="@android:drawable/divider_horizontal_dim_dark" />
+
+    <TableLayout
+        android:id="@+id/Layout_Table_addRecording"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.38" >
+
+        <TableRow
+            android:id="@+id/Layout_Row1_addRecording"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp" >
+
+            <SearchView
+                android:id="@+id/srh_recordings_reserves"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/swatch4_2"
+                android:queryHint="@string/recordings_reserves" >
+            </SearchView>
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/Layout_Row2_addRecording"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp" >
+
+            <SearchView
+                android:id="@+id/srh_recordings_plants"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/swatch4_2"
+                android:queryHint="@string/recordings_plants" >
+            </SearchView>
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/Layout_Row3_addRecording"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <Spinner
+                    android:id="@+id/spinner1"
+                    android:background="@color/swatch4_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                     />
+
+            </LinearLayout>
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/Layout_Row4_addRecordings"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp" >
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/Layout_Row5_addRecording"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp" >
+
+            <EditText
+                android:id="@+id/txt_recordings_notes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.54"
+                android:background="@color/swatch4_2"
+                android:ems="10"
+                android:height="40dp"
+                android:inputType="textMultiLine"
+                android:minHeight="70dp"
+                android:text="@string/recordings_notes" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/Layout_Row6_addRecording"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <Button
+                    android:id="@+id/btn_recordings_delete"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".50"
+                    android:background="@color/swatch4_0"
+                    android:onClick="toMainMenu"
+                    android:text="@string/recordings_submit" />
+
+                <Button
+                    android:id="@+id/btn_recordings_edit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.50"
+                    android:background="@color/swatch4_0"
+                    android:text="@string/recordings_reset" />
+            </LinearLayout>
+        </TableRow>
+    </TableLayout>
+
+</LinearLayout>

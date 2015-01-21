@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lint>
+    <issue id="DuplicateIds">
+        <ignore path="res/layout/recordings_add_activities.xml" />
+    </issue>
+    <issue id="NewApi">
+        <ignore path="res/layout/recordings_add_activities.xml" />
+    </issue>
+    <issue id="TextFields">
+        <ignore path="res/layout/recordings_add_activities.xml" />
+    </issue>
+    <issue id="UnusedAttribute">
+        <ignore path="res/layout/recordings_add_activities.xml" />
+    </issue>
+</lint>

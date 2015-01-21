@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/settings_background_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/swatch3_0"
+    android:orientation="vertical" >
+
+    <TableLayout
+        android:id="@+id/large_radio_table"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:background="@color/swatch5_0"
+        android:padding="10dp" >
+
+        <TableRow
+            android:id="@+id/small_button_row_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:background="@color/swatch4_0"
+            android:padding="10dp" >
+
+            <RadioButton
+                android:id="@+id/gps_radio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/gps" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/small_button_row_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:background="@color/swatch4_0"
+            android:padding="10dp" >
+
+            <RadioButton
+                android:id="@+id/send_prompt_radio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/send_prompt" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/photo_to_device_row"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:background="@color/swatch4_0"
+            android:padding="10dp" >
+
+            <RadioButton
+                android:id="@+id/photo_to_device_radio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/save_photo_to_device" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/wifi_row"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/swatch4_0"
+            android:padding="10dp" >
+
+            <RadioButton
+                android:id="@+id/wifi_radio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/only_upload_with_wifi" />
+        </TableRow>
+    </TableLayout>
+
+    <LinearLayout
+        android:id="@+id/bottom_button_linear"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="5dp"
+        android:background="@color/swatch5_0" >
+
+        <Button
+            android:id="@+id/back_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_marginTop="8dp"
+            android:layout_weight="1"
+            android:background="@color/swatch4_0"
+            android:onClick="toMainMenuBack"
+            android:text="@string/back"
+            tools:ignore="NestedWeights" />
+
+        <Button
+            android:id="@+id/login_out_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:background="@color/swatch4_0"
+            android:onClick="toMainMenu"
+            android:text="@string/apply" />
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,77 @@
+ToDo: 
+
+
+DIAGRAMS
+-Object Diagrams						: elo9		(DONE)
+	>top level class diagrams + Links
+
+
+
+-Class Diagram
+	>Link classes together					: all		(DONE)
+	>Complete Database					: jas78
+	>Add Reserve class					: elo9		(DONE)
+	>Complete Activity_AddSpecies (consider renaming)	: elo9		(DONE)
+	>Filtering Package					: elo9		(DONE)
+		>Filter interface
+		>Filter classes
+	>Reorder Data package					: elo9		(DONE)
+	>Add Abundance enum					: elo9		(DONE)
+
+
+
+-State Diagrams							: jas78		(DONE)
+	
+
+-Sequence Diagrams						: als48		(DONE)
+	>GeneralSystemFlow
+		>Login / Register
+		>Adding Record
+		>Updating a Record
+
+-Activity Diagrams						: jas78
+	>Whole System activity
+
+
+
+ALGORITHMS
+//Establish psuedo code standard				: jas78
+//Establish roles / deligation after diagrams
+-Algorithms : psuedo code http://users.csc.calpoly.edu/~jdalbey/SWE/pdl_std.html
+	>Filter	& Sorting
+Firstly need to sort the data, research best algorithm for this	decided by projectiles
+Filtering picking out elements that match conditions below.	
+		>Alphabetical					: all
+		>Author
+		>Date
+		>Abundence
+		>Species
+	>Search 
+		>Generic Search					: elo9 		(DONE)
+		>(Binary Search)
+
+Short paragrpah detailing specific structure			: all
+
+
+
+DATA STRUCTURES
+-RecordingQueue
+	>ADT : Psuedo code					: elo9		(DONE)
+
+
+
+
+
+PROTOTYPE
+-Android Project
+	>Add Activites						: jas78
+	>Add significant classes				: jas78
+	>set up ui activities:					: all
+		>log on
+		>register
+		>settings
+		>main menu
+		>recordings
+		>plant species
+		>edit recordings
+

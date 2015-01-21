@@ -1,0 +1,77 @@
+package uk.ac.aber.cs221.group11.data_processing;
+import uk.ac.aber.cs211.group11.activities.Activity_Login;
+
+/** 
+ * Outline for Data Processing. 
+ */
+
+public class FormatChecker {
+
+	/**
+     * Check that abundance representation has been entered.
+     * D - "Dominant"
+     * A - "Abundant"
+     * F - "Frequent"
+     * O - "Occasional"
+     * R - "Rare"
+	 *
+	 * @param abundance The users input to be checked against valid char values in validAbundance[]
+	 * @return char Relevant abundance character
+     */
+    public char checkAbundance(String abundance);
+    
+	/**
+     * Check that phone number is the length of validPhoneLength variable.
+	 *
+	 * @param number The users input to be checked against validPhoneLength
+	 * @return int The users phone number in int format
+     */
+    public int checkPhoneNumber(String number);
+    
+	/**
+     * Checks to ensure that latitude entered is of correct length.
+	 *
+	 * @param latitude The users input to be checked against the latitudes Max and Min values
+	 * @return int The latitude the user checked
+     */
+    public int checkLatitude(int latitude);
+    
+	/**
+     * Checks to ensure that longitude entered is of correct length.
+	 *
+	 * @param longitude The users input to be checked against the longitudes Max and Min values
+	 * @return int The longitude the user checked
+     */
+    public int CheckLongitude(int longitude);
+	
+}
+
+public class LogonChecker{
+    
+	/**
+     * Check to see if the user has entered a valid user ID and password combination.
+	 *
+	 * @param uid The users UID input to be checked
+	 * @param password The users password input to be checked
+     */
+    public boolean checkLogin(String uid, String password);
+    
+}
+
+public class ConnectivityChecker{
+
+	/**
+     * Checks if user has WiFi on.
+	 *
+     * @return true if WiFI is on, false if WiFi is off
+     */
+    public boolean checkWifi();
+    
+	/**
+     * Checks if user has GPS enabled.
+	 *
+     * @return true if GPS is on, false if GPS is off
+     */
+    public boolean checkGPS();
+    
+}

@@ -1,0 +1,94 @@
+package uk.ac.aber.cs221.group11.db;
+
+/** 
+ * Outline for the Database Connection Class
+ */
+public class DB_Connection {
+	private String sql_query; //Holds an SQL query to be sent to the database
+	
+	/**
+	 * Method to connect to the database 
+	 *
+	 * @param name The name of the database
+	 * @param location The location or address of the database
+	 * @param port The port to connect to
+	 */
+	public static void connectToDatabase(String name, String location, String port);
+	
+	/**
+	 * Method to retrieve data from the database
+	 *
+	 * @return An array of objects from the database
+	 */
+	public static Object[] getData();
+}
+
+/** 
+ * Outline for the Local Database Class
+ */
+public class DB_Local {
+	private Object[] species; //List of local species
+	private Reserves[] reserves; //List of local reserves
+	
+	/**
+	 * Method to get the Reserves from the Local DB
+	 *
+	 * @param sqlStatement The SQL statement to execute
+	 * @return An array of reserves
+	 */
+	public static Object[] getReserves(String sqlStatement);
+	
+	/**
+	 * Method to get certain Species from the Local DB
+	 *
+	 * @param sqlStatement The SQL statement to execute
+	 * @return An array of species
+	 */
+	public static Object[] getCertainSpecies(String sqlStatement);
+}
+
+/** 
+ * Outline for the Database Server Class
+ */
+public class DB_Server {
+	/**
+	 * Method to send data to the DB server
+	 *
+	 * @param sqlStatement The SQL statement to execute
+	 */
+	public static void sendData(String sqlStatement);
+	
+	/**
+	 * Method to get data from the DB server
+	 *
+	 * @param sqlStatement The SQL statement to execute
+	 */
+	public static void getData(String sqlStatement);
+}
+
+/** 
+ * Outline for the Database Synchronisation Class
+ */
+public class DB_Sync {
+	/**
+	 * Method to synchronise the local and remote databases
+	 *
+	 * @param databaseName The database to synchronise with
+	 * @return boolean indicating whether the synchronisation was successful
+	 */
+	public static boolean syncDatabase(String databaseName);
+	
+	/**
+	 * Method to get the contents of the local database
+	 *
+	 * @return An array of objects with the contents of the local database
+	 */
+	public static Object[] getLocalDatabase();
+	
+	/**
+	 * Method to add local data to the server
+	 *
+	 * @param localData The data to add to the server
+	 */
+	public static void addToServer(Object[] localData);
+}
