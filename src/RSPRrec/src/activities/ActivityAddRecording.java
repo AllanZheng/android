@@ -27,7 +27,7 @@ public class ActivityAddRecording extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.recordings_add_activities);
+        setContentView(R.layout.activity_recordings_add);
         dataStore = (DataStore) getIntent().getSerializableExtra("DataStore");
         /*nameField = (EditText) findViewById(R.id.txt_recordings_name);
         latField = (EditText) findViewById(R.id.txt_recordings_latitude);

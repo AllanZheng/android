@@ -9,7 +9,7 @@
     tools:ignore="PxUsage" >
 
     <ImageView
-        android:id="@+id/imageView1"
+        android:id="@+id/img_addRecording"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_weight="8.83"
@@ -24,7 +24,7 @@
         android:layout_weight="1.38" >
 
         <TableRow
-            android:id="@+id/tableRow1"
+            android:id="@+id/Layout_Row1_addRecording"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:paddingTop="10dp" >
@@ -40,7 +40,7 @@
         </TableRow>
 
         <TableRow
-            android:id="@+id/tableRow2"
+            android:id="@+id/Layout_Row2_addRecording"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:paddingTop="10dp" >
@@ -55,7 +55,7 @@
         </TableRow>
 
         <TableRow
-            android:id="@+id/tableRow3"
+            android:id="@+id/Layout_Row3_addRecording"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:paddingTop="10dp" >
@@ -70,7 +70,7 @@
         </TableRow>
 
         <TableRow
-            android:id="@+id/tableRow4"
+            android:id="@+id/Layout_Row4_addRecordings"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:paddingTop="10dp" >
@@ -106,7 +106,7 @@
         </TableRow>
 
         <TableRow
-            android:id="@+id/tableRow5"
+            android:id="@+id/Layout_Row5_addRecording"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:paddingTop="10dp" >
@@ -125,7 +125,7 @@
         </TableRow>
 
         <TableRow
-            android:id="@+id/tableRow6"
+            android:id="@+id/Layout_Row6_addRecording"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" >
 

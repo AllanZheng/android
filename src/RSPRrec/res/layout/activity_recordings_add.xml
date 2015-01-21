@@ -1,50 +1,32 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/Layout_Linear_Root_addRecording"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/main_menu_background"
+    android:background="@color/swatch3_0"
     android:orientation="vertical"
     tools:context="activities.ActivityRecordings"
     tools:ignore="PxUsage" >
 
     <ImageView
-        android:id="@+id/imageView1"
+        android:id="@+id/img_addRecording"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_weight="8.83"
-        android:background="@color/main_menu_button_container_background"
+        android:background="@color/swatch5_0"
         android:maxHeight="150dp"
         android:minHeight="200px"
         android:src="@android:drawable/divider_horizontal_dim_dark" />
 
     <TableLayout
+        android:id="@+id/Layout_Table_addRecording"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_weight="1.38" >
 
         <TableRow
-            android:id="@+id/tableRow1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:paddingTop="10dp" >
-
-            <EditText
-                android:id="@+id/txt_recordings_name"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:background="@color/recordings_text_backbround"
-                android:ems="10"
-                android:height="40dp"
-                android:text="@string/recordings_name"
-                android:width="@dimen/dialog_fixed_width_major" >
-
-                <requestFocus />
-            </EditText>
-        </TableRow>
-
-        <TableRow
-            android:id="@+id/tableRow2"
+            android:id="@+id/Layout_Row1_addRecording"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:paddingTop="10dp" >
@@ -56,10 +38,11 @@
                 android:background="@color/recordings_text_backbround"
                 android:queryHint="@string/recordings_reserves" >
             </SearchView>
+
         </TableRow>
 
         <TableRow
-            android:id="@+id/tableRow3"
+            android:id="@+id/Layout_Row2_addRecording"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:paddingTop="10dp" >
@@ -71,15 +54,44 @@
                 android:background="@color/recordings_text_backbround"
                 android:queryHint="@string/recordings_plants" >
             </SearchView>
+
         </TableRow>
 
         <TableRow
-            android:id="@+id/tableRow4"
+            android:id="@+id/Layout_Row3_addRecording"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:paddingTop="10dp" >
 
             <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/textView1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="TextView" />
+
+                <Spinner
+                    android:id="@+id/spinner1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                     />
+
+            </LinearLayout>
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/Layout_Row4_addRecordings"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp" >
+
+            <LinearLayout
+                android:id="@+id/Layout_Linear_lng_lat_divide"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content" >
 
@@ -96,7 +108,7 @@
                     android:text="@string/recording_latitude" />
 
                 <EditText
-                    android:id="@+id/txt_recordings_latitude"
+                    android:id="@+id/txt_recordings_longitude"
                     android:layout_width="wrap_content"
                     android:layout_height="fill_parent"
                     android:layout_weight="1"
@@ -110,7 +122,7 @@
         </TableRow>
 
         <TableRow
-            android:id="@+id/tableRow5"
+            android:id="@+id/Layout_Row5_addRecording"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:paddingTop="10dp" >
@@ -129,7 +141,7 @@
         </TableRow>
 
         <TableRow
-            android:id="@+id/tableRow6"
+            android:id="@+id/Layout_Row6_addRecording"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" >
 

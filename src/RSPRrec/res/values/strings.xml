@@ -33,15 +33,13 @@
 	<string name="editPlantRecording">Edit Plant Recording</string>
 	<string name="addRecording">Add Recording</string>
 	
-	<color  name="settings_background">#545454</color>
-    <color  name="settings_button">#669900</color>
-	<color 	name="settings_highlight">#7FC123</color> 
-	<color  name="settings_container">#272727</color>
-	<color name="recordings_text_backbround">#E5E5E5</color>
-	<color  name="main_menu_background">#545454</color>
-    <color  name="main_menu_button">#669900</color>
-	<color 	name="main_menu_highlight">#7FC123</color> 
-	<color  name="main_menu_button_container_background">#272727</color> 
+	<color  name="swatch3_0">#545454</color>
+    <color  name="swatch4_0">#669900</color>
+	<color 	name="swatch4_1">#7FC123</color> 
+	<color  name="swatch4_2">#E5E5E5</color>
+	<color  name="swatch5_0">#272727</color>
+	
+	
 	<string name="login_title_string">Log In</string> 
 	<string name="username_string">Username</string> 
 	<string name="password_string">Password</string> 
